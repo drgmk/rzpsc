@@ -165,8 +165,8 @@ fraction of the light is scattered off circumstellar dust
 \cite{1988SvAL...14...27G,1991Afz....34..333K,2003ARep...47..580S}.
 
 What separates RZ~Psc from other UXOrs (and dippers) is i) the spectral type is K0V
-rather than Herbig Ae/Be for UXOrs and M-type for dippers, ii) the occulting dust lies
-well beyond the sublimation radius, and iii) the star is not associated with a
+rather than Herbig Ae/Be for UXOrs and late K to M-type for dippers, ii) the occulting
+dust lies well beyond the sublimation radius, and iii) the star is not associated with a
 star-forming region so is inferred to be a few tens of millions of years old. The dust
 distance has been inferred from the speed of ingress of dimming events, which was
 previously estimated as about 0.6au (for circular orbits
@@ -186,12 +186,12 @@ unlikely.
 Thus, the potentially compelling and unique aspect for RZ~Psc is that we are observing
 dimming events from dust in a main-sequence planetary system that resides at about
 0.5au. This dust is also seen in thermal emission, so deriving joint constraints on the
-dust properties and structure may be possible. As argued by \cite{2013A&A...553L...1D} a
-picture is emerging in which RZ~Psc is surrounded by a massive young version of our own
-asteroid belt, in which planetesimals are continually being destroyed. These collisions
-generate the large collective surface area of small dust that emits strongly in the
-mid-IR, and the system geometry means that this dust also sometimes passes in front of
-the star.
+dust properties and structure may be possible. As argued by de~Wit et
+al. \cite{2013A&A...553L...1D} a picture is emerging in which RZ~Psc is surrounded by a
+massive young version of our own asteroid belt, in which planetesimals are continually
+being destroyed. These collisions generate the large collective surface area of small
+dust that emits strongly in the mid-IR, and the system geometry means that this dust also
+sometimes passes in front of the star.
 
 Given an interpretation related to individual planetesimal disruptions, rather than
 hydrodynamics, it is perhaps surprising that to date the dimming events are not seen to
@@ -213,16 +213,16 @@ outer disk due to perturbations from an unseen companion \cite{2013A&A...553L...
 To study the temporal variability of RZ~Psc we use two seasons of public data from the
 Wide-Angle Search for Planets (WASP \cite{2006PASP..118.1407P}), and nine seasons of data
 from the Kilodegree Extremely Little Telescope North (KELT-North
-\cite{2007PASP..119..923P}. We also collected, but ultimately did not use, photometric
+\cite{2007PASP..119..923P}). We also collected, but ultimately did not use, photometric
 observations of RZ~Psc from a wide variety of other sources
 (\cite{1994AJ....108.1906H,1973IBVS..783....1K,1980PZ.....21..310K,1985PZ.....22..181Z,1991Afz....34..333K,1997AcA....47..467P,2014Ap.....57..491P},
 the Catalina Sky Survey, the American Association of Variable Star Observers, the All-Sky
 Automated Survey). Most of these other data have been previously published and their
 collation here is largely for the benefit of others. This compilation contains nearly all
 data for which tables have been published, but aside from the Harvard plate photometry
-published by \cite{1999A&AS..140..293G} we have not sought other photometry so the light
-curve remains incomplete.\footnote{Normalised photometry is available at
-  \href{https://github.com/drgmk/rzpsc}{https://github.com/drgmk/rzpsc}}
+published by G\:urtler et al. \cite{1999A&AS..140..293G} we have not sought other
+photometry so the light curve remains incomplete.\footnote{Normalised photometry is
+  available at \href{https://github.com/drgmk/rzpsc}{https://github.com/drgmk/rzpsc}}
 
 Here we focus on the WASP and KELT-North data, as it has not been previously analysed and
 has considerably higher cadence (many measurements per night) and temporal coverage
@@ -454,7 +454,7 @@ the mean and standard deviation of the power.
 % plot_hist_sim.py
 \begin{figure}
   \begin{center}
-    \hspace{-0.5cm} \includegraphics[width=0.5\textwidth]{figs/hist_single.ps}
+    \hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/hist_single.ps}
     \caption{Power at a given period from the iterative event finding. The solid line
       shows the power from the data, and is the same in each panel. The dashed lines show
       the mean and $\pm$1$\sigma$ power from simulated dimming events, which from top to
@@ -565,12 +565,12 @@ are now $R_\star$). Then $I=1$ and $\tau(x-x_{\rm cl})$ is a step function at $u
 %   F = 2 \int_{u}^{1} \sqrt{1-x^2} dx
 % \end{equation}
 % \cite{2006ApJ...644..510W}. The 
-fraction of the total stellar flux ($F_\star = \pi$) seen is
+fraction of the total stellar flux ($F_\star = \pi$) seen is \cite{2006ApJ...644..510W}
 \begin{equation}
-  f = F/F_\star = (cos^{-1}[u] - u\sqrt{1-u^2})/\pi
+  f = F/F_\star = (cos^{-1}[u] - u\sqrt{1-u^2})/\pi \, ,
 \end{equation}
-\cite{2006ApJ...644..510W}, where $f$ has the same units as our normalised light
-curve. If the curtain is not completely optically thick then the fraction is instead
+where $f$ has the same units as our normalised light curve. If the curtain is not
+completely optically thick then the fraction is instead
 \begin{equation}
  f = F/F_\star + (1-F/F_\star)(1-\tau)
 \end{equation}
@@ -625,7 +625,7 @@ semi-major axes as upper limits.
 % gradients.pro
 \begin{figure}
   \begin{center}
-    \hspace{-0.5cm} \includegraphics[width=0.5\textwidth]{figs/gradients.eps}
+    \hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/gradients.eps}
     \caption{Gradient and minimum flux measured from individual nights'
       observations. Open circles have gradients significantly different from zero, and a
       symbol size proportional to the inverse of the gradient uncertainty. Dots are
@@ -688,7 +688,7 @@ star.
 % gradients.pro
 \begin{figure}
   \begin{center}
-    \hspace{-0.5cm} \includegraphics[width=0.5\textwidth]{figs/sma.eps}
+    \hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/sma.eps}
     \caption{Semi-major axes estimated from the light curve gradients in Figure
       \ref{fig:grad}. Open circles have gradients significantly different from zero, and
       a symbol size proportional to the inverse of the gradient uncertainty. Dots are
@@ -702,7 +702,7 @@ star.
 In Figure \ref{fig:sma} we have converted the gradients into semi-major axes using
 equation (\ref{eq:acl}). The dashed line shows the stellar radius, estimated to be
 approximately Solar based on an age of 25Myr \cite{2013AstL...39..776P} and an effective
-temperature of 5350K \cite{2014A&A...563A.139P} using \cite{2000A&A...358..593S}
+temperature of 5350K \cite{2014A&A...563A.139P} using Siess \cite{2000A&A...358..593S}
 isochrones. This Figure also includes solid lines of constant gradient, computed using
 equation (\ref{eq:acl}) and $f_{\rm min} = 1-\tau$.
 
@@ -740,15 +740,15 @@ lines show projected radial velocity \cite{2013Ap.....56..453P}).
 \subsection{Summary of light curve analysis}\label{ss:wheresum}
 
 The aim of this section was to estimate the location of the bodies that cause the dimming
-events towards RZ~Psc. Using ten years of WASP and KELT-North data, we investigated both the
-periodicity of possible repeat events, and the light curve gradients. While we found
+events towards RZ~Psc. Using ten years of WASP and KELT-North data, we investigated both
+the periodicity of possible repeat events, and the light curve gradients. While we found
 evidence for a 60-70 day period, this signal is relatively weak. This period would place
 the clumps near 0.3au, similar to the distance inferred for the dust seen as an IR excess
 (though this location is also uncertain). The gradient analysis places loose constraints
 on the clump orbits ($<$10au), so is consistent with a scenario where the clumps have
 semi-major axes near 0.3au. Thus, there is no reason to disfavour the model proposed by
-\cite{2013A&A...553L...1D}, that the dimming events are associated with clumps being
-created by planetesimal collisions within an asteroid belt analogue.
+de Wit et al. \cite{2013A&A...553L...1D}, that the dimming events are associated with
+clumps being created by planetesimal collisions within an asteroid belt analogue.
 
 The primary uncertainty lies with the disk evolutionary state. If a significant gas
 reservoir remains, a turbulent inner rim scenario similar to that proposed for UXOrs
@@ -894,7 +894,7 @@ clump has radius $R_{\rm c}$.  The clump radius and dimming event duration are r
 % rcl-a.pro
 \begin{figure}
   \begin{center}
-    \hspace{-0.5cm} \includegraphics[width=0.5\textwidth]{figs/rcl-a.eps}
+    \hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/rcl-a.eps}
     \caption{Clump properties assuming circular orbits for a range of dimming event
       durations (as labelled). The brown region marks the approximate location of the
       RZ~Psc asteroid belt (or the inner edge of a more extended disk). The blue shaded
@@ -970,7 +970,7 @@ by \cite{2003ApJ...594L..47D}.
 % sedcomp.pro
 \begin{figure}
   \begin{center}
-    \hspace{-0.5cm} \includegraphics[width=0.5\textwidth]{figs/spcomp.eps}
+    \hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/spcomp.eps}
     \caption{The SED of RZ~Psc in comparison with other young disk-hosting stars. The
       triangles are AKARI and IRAS upper limits for RZ~Psc. Measurements we made at
       different times, so the apparent discrepancy between the WISE detection at 22$\mu$m
@@ -1045,7 +1045,7 @@ feature and allow a better comparison with other systems, such as those in Figur
 % export from cartoon.key, cropped with pdfcrop
 \begin{figure}
   \begin{center}
-    \hspace{-0.5cm} \includegraphics[width=0.5\textwidth]{figs/cartoon-crop.ps}
+    \hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/cartoon-crop.ps}
     \caption{Cartoon showing possible origins of dippers and UXOrs, and why Sun-like
       stars may only rarely show analogous behaviour. In each case the star, magnetic
       dipole, and rotation axis are shown at the left, with possible disk structures
@@ -1070,14 +1070,14 @@ dippers and UXOrs, and possible reasons for a lack of significant dust-related d
 events towards Sun-like stars (see \cite{2016arXiv160503985B} for similar figures for
 dippers).
 
-From the perspective of dippers, which so far have spectral types later than K5,
-\cite{2016arXiv160503985B} explain their tendency to be low-mass stars as a consequence
-of the relation between the magnetospheric truncation, corotation, and sublimation
-radii. The periodicity of dippers suggests that the occulting material is near the
-corotation radius, and is therefore near the base of any accretion columns. For low-mass
-stars the dust temperature at this distance is cool enough that the columns contain
-significant dust mass and hence the dipping phenomenon is seen (top panel of Figure
-\ref{fig:cartoon}. For earlier type stars the sublimation radius is outside the
+From the perspective of dippers, which so far have spectral types later than K5, Bodman
+et al.  \cite{2016arXiv160503985B} explain their tendency to be low-mass stars as a
+consequence of the relation between the magnetospheric truncation, corotation, and
+sublimation radii. The periodicity of dippers suggests that the occulting material is
+near the corotation radius, and is therefore near the base of any accretion columns. For
+low-mass stars the dust temperature at this distance is cool enough that the columns
+contain significant dust mass and hence the dipping phenomenon is seen (top panel of
+Figure \ref{fig:cartoon}. For earlier type stars the sublimation radius is outside the
 corotation radius, so any dust in the accretion columns has sublimated and no dipping is
 seen (grey accretion column in the middle panel of Figure \ref{fig:cartoon}).
 
@@ -1092,9 +1092,9 @@ accretion streams are transparent or not is moot.
 From the perspective of UXOrs, a possible explanation for their tendency to be B and
 A-type stars is that the specifics of self-shadowing are different for Sun-like stars
 \cite{2003ApJ...594L..47D}. The reason is unclear, but it seems either that
-self-shadowing is simply rarer, or that the nature is different \cite[i.e. shadowing by
-the inner disk regions, rather than by a puffed-up inner rim,
-see]{2004A&A...421.1075D,2007prpl.conf..555D}
+self-shadowing is simply rarer, or that the nature is different (i.e. shadowing by the
+inner disk regions rather than by a puffed-up inner rim, see
+\cite{2004A&A...421.1075D,2007prpl.conf..555D}).
 
 Thus, it seems that the rarity of Sun-like stars among dipper and UXOr populations can be
 understood as a result of the scenarios for both. Accretion columns are optically thin
@@ -1180,30 +1180,29 @@ may have settled enough that the inner rim is visible.
 
 \ack{}
 
-Data and code used in the preparation of this contribution can be found online at
-\href{https://github.com/drgmk/rzpsc}{https://github.com/drgmk/rzpsc}.
+\textbf{Data and code:} Materials used in the preparation of this contribution can be
+found online at \href{https://github.com/drgmk/rzpsc}{https://github.com/drgmk/rzpsc}.
 
-We declare that we have no competing interests.
+\textbf{Competing interests:} We declare that we have no competing interests.
 
-GMK initiated the project, collated data, did most of the analysis, and wrote the
-paper. MAK contributed early ideas and the iterative event finding method. KGS provided
-independent SED models to test for a UV excess. As members of the KELT collaboration, JP,
-JER, RJS, and KGS acquired the time-series photometry. All co-authors provided input on
-the style and content of the manuscript.
+\textbf{Contributions:} GMK initiated the project, collated data, did most of the
+analysis, and wrote the paper. MAK contributed to the time-series analysis and conceived
+the iterative event finding method. KGS provided independent SED models to test for a UV
+excess. As members of the KELT collaboration, JP, JER, RJS, and KGS acquired the
+time-series photometry. All co-authors provided input on the style and content of the
+manuscript.
 
-We thank Joachim G\"urtler for sharing photometry from the Sonneberg and Harvard Plates
-in a palatable form, AAVSO observers for monitoring RZ~Psc, and Simon Hodgkin and Mark
-Wyatt for useful discussions. This paper makes use of data from the DR1 of the WASP data
-\cite{2010A&A...520L..10B} as provided by the WASP consortium, and the computing and
-storage facilities at the CERIT Scientific Cloud, reg. no. CZ.1.05/3.2.00/08.0144 which
-is operated by Masaryk University, Czech Republic.
+\textbf{Acknowledgments:} We thank Joachim G\"urtler for sharing photometry from the
+Sonneberg and Harvard Plates in a palatable form, AAVSO observers for monitoring RZ~Psc,
+and Simon Hodgkin and Mark Wyatt for useful discussions. This paper makes use of data
+from the DR1 of the WASP data \cite{2010A&A...520L..10B} as provided by the WASP
+consortium, and the computing and storage facilities at the CERIT Scientific Cloud,
+reg. no. CZ.1.05/3.2.00/08.0144 which is operated by Masaryk University, Czech Republic.
 
-GMK is supported by the Royal Society as a Royal Society University Research Fellow. MAK
-is employed as a lecturer at the Leiden Observatory. JP is employed as a lecturer at
-Lehigh University. JER is funded as a Future Faculty Leaders Fellow at the
-Harvard-Smithsonian Center for Astrophysics. RS is employed as an Instrumentation
-Scientist for the Las Cumbres Observatory Global Telescope Network. KGS is funded as a
-lecturer at Vanderbilt University.
+\textbf{Funding:} GMK is supported by the Royal Society as a Royal Society University
+Research Fellow. JER is funded as a Future Faculty Leaders Fellow at the
+Harvard-Smithsonian Center for Astrophysics. Early work on KELT-North was supported by
+NASA Grant NNG04GO70G
 
 %\bibliography{../ref} \bibliographystyle{vancouver}
 
