@@ -18,3 +18,5 @@ the inner rim is normally shadowed by a flared outer disk.
 This repository contains nearly everything used in the analysis upon which this paper is
 based. The main thing missing will be IDL *.pro files for subroutines, most of which can
 be found in the NASA IDL library. I am happy to supply any others.
+
+The compiled normalised light curve is in the file "figs/all-lc.txt".
