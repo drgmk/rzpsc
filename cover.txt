@@ -6,5 +6,10 @@ I am pleased to submit the original article, titled "The transiting dust clumps 
 evolved disk of the Sun-like UXOr RZ~Psc". It describes our analysis of a decade of
 observations of an unusual variable star, and our interpretation of this system.
 
+I have one technical comment regarding the latex style file that should be passed on to
+the appropriate person; using the \ref command on subsections yields text like "(a)", but
+no information about which section this subsection belongs to. That is, "(a)" could be
+section 1a, 2a, etc.
+
 regards
 Grant Kennedy
