@@ -6,7 +6,7 @@ ps:
 	latex ms
 	latex ms
 	dvips ms.dvi
-	pstopdf ms.ps
+	ps2pdf ms.ps
 	open ms.pdf
 
 qps:
@@ -14,7 +14,7 @@ qps:
 	bibtex ms
 	latex ms
 	dvips ms.dvi
-	pstopdf ms.ps
+	ps2pdf ms.ps
 	open ms.pdf
 
 nobib:
@@ -22,6 +22,6 @@ nobib:
 	latex ms
 	latex ms
 	dvips ms.dvi
-	pstopdf ms.ps
+	ps2pdf ms.ps
 	open ms.pdf
 

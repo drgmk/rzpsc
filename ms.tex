@@ -1,9 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\documentclass[useAMS,usenatbib,usegraphicx,referee]{mn2e}
-\documentclass[useAMS,usenatbib,usegraphicx]{mn2e}
-%\documentclass{emulateapj}
-\usepackage{times,amssymb,hyperref,aas_macros}
-\usepackage{comment}
+\documentclass[]{rsos}
+\usepackage{hyperref,aas_macros}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -16,14 +13,14 @@
 \title[The transiting dust clumps of RZ~Psc]{The transiting dust clumps in the evolved
   disk of the Sun-like UXOr RZ~Psc}
 
-\author[Grant M. Kennedy et al]{Grant M. Kennedy\thanks{Email:
-    \href{mailto:gkennedy@ast.cam.ac.uk}{gkennedy@ast.cam.ac.uk}}$^1$,
+\author[Grant M. Kennedy et al]{Grant M. Kennedy$^1$,
   Matthew A. Kenworthy$^2$,
-  Joshua Pepper$^3$, \newauthor
+  Joshua Pepper$^3$,
   Joseph E. Rodriguez$^{4,5}$, 
   Robert J. Siverd$^6$, \&
-  Keivan G. Stassun$^{5,7}$ \\
-  $^1$ Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3
+  Keivan G. Stassun$^{5,7}$}
+
+\address{\footnotesize{$^1$ Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3
   0HA, UK \\
   $^2$ Leiden Observatory, Leiden University, PO Box 9513, NL-2300 RA Leiden, the
   Netherlands \\
@@ -37,8 +34,17 @@
   Barbara, CA 93117, USA \\
   $^7$ Department of Physics, Fisk University, 1000 17th Avenue North, Nashville, TN
   37208, USA \\
-}
-\maketitle
+}}
+
+\subject{astrophysics, extrasolar planets, stars}
+
+\keywords{variable stars, protoplanetary disks, debris disks, circumstellar matter}
+
+\corres{Grant M. Kennedy \\
+\email{gkennedy@ast.cam.ac.uk}}
+
+\begin{fmtext}
+\end{fmtext}
 
 \begin{abstract}
   RZ~Psc is a young Sun-like star, long associated with the UXOr class of variable stars,
@@ -57,14 +63,12 @@
   turbulence above the inner rim is normally shadowed by a flared outer disk.
 \end{abstract}
 
-\begin{keywords}
-  circumstellar matter, variable stars, protoplanetary disks, debris disks
-\end{keywords}
+\maketitle
 
 \section{Introduction}\label{s:intro}
 
 Disks of gas and dust surround essentially all young analogues of our Sun
-\citep[e.g.][]{2001ApJ...553L.153H}. The lifetime of the gas in these disks is very short
+(e.g. \cite{2001ApJ...553L.153H}). The lifetime of the gas in these disks is very short
 compared to the stellar lifetime, and within a few million years most has accreted onto
 the star and the remainder been lost to space in photoevaporative flows. The evolution of
 the dust during this phase is uncertain, but the existence of gas giant planets makes it
@@ -76,72 +80,72 @@ components being the planets themselves and a residual disk of small bodies. The
 ``planetesimals'' -- the asteroids and comets -- make up the ``debris disk'', where the
 standard picture is that destructive collisions between them generate a size distribution
 of fragments that extends down to micron-sized dust
-\citep[e.g.][]{1993prpl.conf.1253B,2002MNRAS.334..589W,2010RAA....10..383K}.
+(e.g. \cite{1993prpl.conf.1253B,2002MNRAS.334..589W,2010RAA....10..383K}).
 
 The state of planetary systems as they emerge from the gas-rich phase is
 uncertain. Planets' locations are not finalised at this epoch, but may move by
 interacting with other stars, planets, and/or planetesimals in the system
-\citep[e.g.][]{2007ApJ...669.1298F,1996Sci...274..954R,2005Natur.435..459T}. Similarly,
-the state and origin of the debris disk is uncertain. At stellocentric distances near
-1au, the region of interest in this article, it could be that dust observed at this time
-is related to the final stages of planet formation
-\citep[e.g.][]{2010ApJ...717L..57M,2012MNRAS.tmp.3462J}, originates in young analogues of
-our Asteroid belt \citep{2013MNRAS.433.2334K}, is a signature of comets scattered inwards
-from more distant regions \citep[e.g.][]{2009MNRAS.399..385B}, or is simply a remnant of
-the gas-rich disk that has yet to be dispersed \citep{2014MNRAS.tmp...88K}. In the
-absence of gas detections that argue for the latter scenario, discerning among these
-various scenarios, which are not mutually exclusive, is difficult.
+(e.g. \cite{2007ApJ...669.1298F,1996Sci...274..954R,2005Natur.435..459T}). Similarly, the
+state and origin of the debris disk is uncertain. At stellocentric distances near 1au,
+the region of interest in this article, it could be that dust observed at this time is
+related to the final stages of planet formation
+(e.g. \cite{2010ApJ...717L..57M,2012MNRAS.425..657J}), originates in young analogues of
+our Asteroid belt \cite{2013MNRAS.433.2334K}, is a signature of comets scattered inwards
+from more distant regions (e.g. \cite{2009MNRAS.399..385B}), or is simply a remnant of
+the gas-rich disk that has yet to be dispersed \cite{2014MNRAS.438.3299K}. In the absence
+of gas detections that argue for the latter scenario, discerning among these various
+scenarios, which are not mutually exclusive, is difficult.
 
 A promising way to probe these inner regions is by observing temporal variability
-\citep[e.g.][]{2014Sci...345.1032M}. Optical and IR stellar variation has been studied
-for decades \citep[e.g.][]{1945ApJ...102..168J,1994AJ....108.1906H}, and has recently
+(e.g. \cite{2014Sci...345.1032M}). Optical and IR stellar variation has been studied
+for decades (e.g. \cite{1945ApJ...102..168J,1994AJ....108.1906H}), and has recently
 been reinvigorated by large scale efforts
-\citep[e.g.][]{2011ApJ...733...50M,2014AJ....147...82C} and as a side-effect of
+(e.g. \cite{2011ApJ...733...50M,2014AJ....147...82C}) and as a side-effect of
 large-scale surveys for transiting planets
-\citep{2012AJ....143...72M,2013AJ....146..112R,2016MNRAS.457.3988B}. Of many different
+\cite{2012AJ....143...72M,2013AJ....146..112R,2016MNRAS.457.3988B}. Of many different
 classes of variables, the ones of most interest and relevance here are the
 ``UXOrs''. These are usually Herbig Ae/Be stars, and typically show several magnitudes of
 extinction that is generally attributed to variable obscuration by circumstellar dust
-\citep{1994AJ....108.1906H,1999AJ....118.1043H,2000A&A...364..633N}.\footnote{Not all
+\cite{1994AJ....108.1906H,1999AJ....118.1043H,2000A&A...364..633N}.\footnote{Not all
   stars occulted by dust are UXOrs. Two main classes are: those occulted by circumstellar
   material beyond $\gtrsim$10au, such as AA~Tau and V409~Tau which show
-  $\gtrsim$year-long dimming events \citep{2013A&A...557A..77B,2015AJ....150...32R}, and
+  $\gtrsim$year-long dimming events \cite{2013A&A...557A..77B,2015AJ....150...32R}, and
   systems such as $\epsilon$~Aur, J1407, EE~Cep, and OGLE-LMC-ECL-11893 where the
   occultations are attributed to circumsecondary disks
-  \citep[e.g.][]{1999MNRAS.303..521M,2012AJ....143...72M,2014ApJ...788...41D,2015ApJS..220...14K}.}
+  (e.g. \cite{1999MNRAS.303..521M,2012AJ....143...72M,2014ApJ...788...41D,2015ApJS..220...14K}).}
 Two key arguments that favour circumstellar dust as the cause are i) ``blueing'', where
 the star is reddened when moderately dimmed but returns to the stellar colour for very
 deep ($\gtrsim$1mag) events -- the remaining flux is interpreted as light scattered off
-circumstellar dust \citep{1988SvAL...14...27G}, and ii) increased polarisation fraction
+circumstellar dust \cite{1988SvAL...14...27G}, and ii) increased polarisation fraction
 during dimming events, caused by a greater fraction of the flux being contributed by
-dust-scattered light \citep[e.g.][]{2001ARep...45...51R}. UXOrs therefore reveal
+dust-scattered light (e.g. \cite{2001ARep...45...51R}). UXOrs therefore reveal
 information on the degree of non-axisymmetry, the ``clumpiness'', of dust orbiting a star
 on spatial scales similar to the star itself. The observations can span multiple orbits
-to test for repeated dimming events \citep[e.g.][]{1999A&A...349..619B}, and by using
+to test for repeated dimming events (e.g. \cite{1999A&A...349..619B}), and by using
 different bandpasses and polarisation can estimate dust grain sizes
-\citep[e.g.][]{1988SvAL...14...27G,1994ASPC...62...63G}.
+(e.g. \cite{1988SvAL...14...27G,1994ASPC...62...63G}).
 
 In the majority of UXOr-like cases (i.e. those related to obscuration by dust), including
 other classes such as ``dippers''
-\citep[e.g.][]{2014AJ....147...82C,2016ApJ...816...69A}, the processes causing young
+(e.g. \cite{2014AJ....147...82C,2016ApJ...816...69A}), the processes causing young
 stars to vary are attributed to gas-rich protoplanetary disks. For Herbig Ae/Be stars the
 obscuration is thought to be caused by hydrodynamic turbulence that lifts dust above the
-puffed up inner rim of a self-shadowed disk \citep{2003ApJ...594L..47D}. For the dippers,
+puffed up inner rim of a self-shadowed disk \cite{2003ApJ...594L..47D}. For the dippers,
 which are observed around low-mass stars, the obscuration is attributed to dust in
 accretion streams that link the inner disk and the stellar surface, and/or to variations
 in the height of the inner disk edge
-\citep{1999A&A...349..619B,2016ApJ...816...69A,2016arXiv160503985B}. The common theme is
+\cite{1999A&A...349..619B,2016ApJ...816...69A,2016arXiv160503985B}. The common theme is
 therefore that the location of the occulting dust is as close to the star as physically
 possible, being set by sublimation. These systems tell us about the nature of turbulence
 and accretion in gas-dominated disks, but so far reveal little about how these disks
 transition to the debris phase and the subsequent evolution.
 
 Here we focus on RZ~Psc, a star that shows UXOr-like variability
-\citep[e.g.][]{1985PZ.....22..181Z,1999A&AS..140..293G,2003ARep...47..580S}. As a young
+(e.g. \cite{1985PZ.....22..181Z,1999A&AS..140..293G,2003ARep...47..580S}). As a young
 K0V type star with no evidence for gas accretion, but a strong infrared (IR) excess
 suggestive of an Asteroid belt analogue, this system appears unique among UXOrs and may
 provide new information on the structure of inner planetary systems following dispersal
-of the gas disk \citep{2010A&A...524A...8G,2013A&A...553L...1D}. Specifically, we use a
+of the gas disk \cite{2010A&A...524A...8G,2013A&A...553L...1D}. Specifically, we use a
 decade of ground-based optical photometry of RZ~Psc (section \ref{s:data}) to draw
 conclusions on dust location (section \ref{s:where}), and discuss the possible disk
 structure and evolutionary state in section \ref{s:disk}. We conclude in section
@@ -151,38 +155,38 @@ structure and evolutionary state in section \ref{s:disk}. We conclude in section
 
 There is significant evidence that the optical variations seen towards RZ~Psc are caused
 by circumstellar dust: i) during dimming events the colour becomes redder
-\citep{1985PZ.....22..181Z,1980PZ.....21..310K} in a way consistent with that expected
-for dust \citep{1981Afz....17...87P,2004ARep...48..470P}, ii) the maximum depth is about
+\cite{1985PZ.....22..181Z,1980PZ.....21..310K} in a way consistent with that expected for
+dust \cite{1981Afz....17...87P,2004ARep...48..470P}, ii) the maximum depth is about
 2.5mag and during these events the colour returns to near stellar values, suggesting that
-the remaining emission is from light scattered off the circumstellar dust \citep[i.e. the
-star is fully occulted,][]{1981Afz....17...87P,1988SvAL...14...27G}, and iii) the
+the remaining emission is from light scattered off the circumstellar dust (i.e. the star
+is fully occulted \cite{1981Afz....17...87P,1988SvAL...14...27G}, and iii) the
 polarisation fraction increases during the transits, as expected if an increasing
 fraction of the light is scattered off circumstellar dust
-\citep{1988SvAL...14...27G,1991Afz....34..333K,2003ARep...47..580S}.
+\cite{1988SvAL...14...27G,1991Afz....34..333K,2003ARep...47..580S}.
 
 What separates RZ~Psc from other UXOrs (and dippers) is i) the spectral type is K0V
 rather than Herbig Ae/Be for UXOrs and M-type for dippers, ii) the occulting dust lies
 well beyond the sublimation radius, and iii) the star is not associated with a
 star-forming region so is inferred to be a few tens of millions of years old. The dust
 distance has been inferred from the speed of ingress of dimming events, which was
-previously estimated as about 0.6au \citep[for circular
-orbits,][]{2013A&A...553L...1D}. Corroborating evidence comes from the $\sim$500K
-temperature of the dust seen in the mid-IR, which places it near 0.4-0.7au (depending on
-optical depth) and therefore at a location consistent with the occulting dust
-\citep{2013A&A...553L...1D}. The distance to RZ~Psc is unknown, but as an apparently
+previously estimated as about 0.6au (for circular orbits
+\cite{2013A&A...553L...1D}). Corroborating evidence comes from the $\sim$500K temperature
+of the dust seen in the mid-IR, which places it near 0.4-0.7au (depending on optical
+depth) and therefore at a location consistent with the occulting dust
+\cite{2013A&A...553L...1D}. The distance to RZ~Psc is unknown, but as an apparently
 isolated star that shows Li absorption the age has been estimated as a few tens of Myr,
 and therefore beyond the age at which a gas-rich disk should exist
-\citep{2010A&A...524A...8G,2014A&A...563A.139P}. Further distinguishing features are that
+\cite{2010A&A...524A...8G,2014A&A...563A.139P}. Further distinguishing features are that
 the duration of the dimming events is relatively short compared to other UXOrs, a few
 days rather than a few weeks, and that no near-IR excess or accretion signatures are seen
-\citep{2014A&A...563A.139P}, so interpretations related to accretion of disk material
-onto the star \citep[e.g.][]{1999AJ....118.1043H,1999A&A...349..619B,2016arXiv160503985B}
-are unlikely.
+\cite{2014A&A...563A.139P}, so interpretations related to accretion of disk material onto
+the star (e.g. \cite{1999AJ....118.1043H,1999A&A...349..619B,2016arXiv160503985B}) are
+unlikely.
 
 Thus, the potentially compelling and unique aspect for RZ~Psc is that we are observing
 dimming events from dust in a main-sequence planetary system that resides at about
 0.5au. This dust is also seen in thermal emission, so deriving joint constraints on the
-dust properties and structure may be possible. As argued by \citet{2013A&A...553L...1D} a
+dust properties and structure may be possible. As argued by \cite{2013A&A...553L...1D} a
 picture is emerging in which RZ~Psc is surrounded by a massive young version of our own
 asteroid belt, in which planetesimals are continually being destroyed. These collisions
 generate the large collective surface area of small dust that emits strongly in the
@@ -191,10 +195,10 @@ the star.
 
 Given an interpretation related to individual planetesimal disruptions, rather than
 hydrodynamics, it is perhaps surprising that to date the dimming events are not seen to
-be periodic \citep{1999AstL...25..243R,2013A&A...553L...1D}. The only cyclical variation
+be periodic \cite{1999AstL...25..243R,2013A&A...553L...1D}. The only cyclical variation
 seen in light curves for RZ~Psc is a 12.4 year variation with an amplitude of 0.5 mag,
 which is attributed to either a magnetic cycle, or precession of an otherwise unseen
-outer disk due to perturbations from an unseen companion \citep{2013A&A...553L...1D}.
+outer disk due to perturbations from an unseen companion \cite{2013A&A...553L...1D}.
 
 \section{Time series photometry}\label{s:data}
 
@@ -207,18 +211,17 @@ outer disk due to perturbations from an unseen companion \citep{2013A&A...553L..
 \end{figure*}
 
 To study the temporal variability of RZ~Psc we use two seasons of public data from the
-Wide-Angle Search for Planets \citep[WASP,][]{2006PASP..118.1407P}, and nine seasons of
-data from the Kilodegree Extremely Little Telescope North
-\citep[KELT-North,][]{2007PASP..119..923P}. We also collected, but ultimately did not
-use, photometric observations of RZ~Psc from a wide variety of other sources \citep[][,
+Wide-Angle Search for Planets (WASP \cite{2006PASP..118.1407P}), and nine seasons of data
+from the Kilodegree Extremely Little Telescope North (KELT-North
+\cite{2007PASP..119..923P}. We also collected, but ultimately did not use, photometric
+observations of RZ~Psc from a wide variety of other sources
+(\cite{1994AJ....108.1906H,1973IBVS..783....1K,1980PZ.....21..310K,1985PZ.....22..181Z,1991Afz....34..333K,1997AcA....47..467P,2014Ap.....57..491P},
 the Catalina Sky Survey, the American Association of Variable Star Observers, the All-Sky
-Automated
-Survey]{1994AJ....108.1906H,1973IBVS..783....1K,1980PZ.....21..310K,1985PZ.....22..181Z,1991Afz....34..333K,1997AcA....47..467P,2014Ap.....57..491P}. Most
-of these other data have been previously published and their collation here is largely
-for the benefit of others. This compilation contains nearly all data for which tables
-have been published, but aside from the Harvard plate photometry published by
-\citet{1999A&AS..140..293G} we have not sought other photometry so the light curve
-remains incomplete.\footnote{Normalised photometry is available at
+Automated Survey). Most of these other data have been previously published and their
+collation here is largely for the benefit of others. This compilation contains nearly all
+data for which tables have been published, but aside from the Harvard plate photometry
+published by \cite{1999A&AS..140..293G} we have not sought other photometry so the light
+curve remains incomplete.\footnote{Normalised photometry is available at
   \href{https://github.com/drgmk/rzpsc}{https://github.com/drgmk/rzpsc}}
 
 Here we focus on the WASP and KELT-North data, as it has not been previously analysed and
@@ -226,12 +229,12 @@ has considerably higher cadence (many measurements per night) and temporal cover
 (nightly, weather permitting) than other data sets. The WASP data from 2004 and 2006 are
 public and were obtained from an online
 archive\footnote{\href{http://wasp.cerit-sc.cz}{http://wasp.cerit-sc.cz}}. These data
-were processed in a manner similar to that described by \citet{2014MNRAS.441.2845V},
+were processed in a manner similar to that described by \cite{2014MNRAS.441.2845V},
 where common-mode variations were removed using 50 quiet nearby stars. The KELT-North
 data, 2006-2014, were used in raw form, the only specific treatment being a 4\% relative
 correction being made to ensure observations taken in the ``east'' and ``west'' telescope
 orientations have the same calibration. For a full description of the KELT-North data
-reduction, see \citet{2012ApJ...761..123S}.
+reduction, see \cite{2012ApJ...761..123S}.
 
 We normalised each year's data from each instrument separately by converting magnitudes
 to flux density and dividing out the sigma-clipped median. In doing so we are assuming
@@ -280,7 +283,7 @@ Nevertheless, Figure \ref{fig:waspkeltzoom} shows an unprecedented view of dimmi
 seen towards RZ~Psc, and that key information on the ingress and egress of dimming events
 is present. The dimming rate is such that it can be resolved temporally, and hence the
 velocity and radial location of the dust clumps estimated. While such estimates have been
-made in the past based on one or two individual events \citep{1985PZ.....22..181Z}, these
+made in the past based on one or two individual events \cite{1985PZ.....22..181Z}, these
 data make them possible for an ensemble of tens of events.
 
 \section{Where are the occulting bodies?}\label{s:where}
@@ -332,7 +335,7 @@ combined).
 % period-search.pro
 \begin{figure}
 \begin{center}
-\hspace{-0.5cm} \includegraphics[width=0.5\textwidth]{figs/auto.eps}
+\hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/auto.eps}
 \caption{Discrete autocorrelation function for yearly WASP and KELT-North data, computed for
   lags between 10-155 days). The second and third lines from the top show all data, and
   2006-excluded data. Squares show points more than 3$\sigma$ from the sigma-clipped
@@ -346,7 +349,7 @@ Fourier transforms (e.g. periodograms). The motivation being that an individual 
 event may be followed by another some number of days later, and perhaps repeat a few
 times, but other similarly (but not exactly) separated events may happen years later or
 earlier with a phase that is totally different. We therefore used the discrete
-autocorrelation function (DACF) proposed by \citet{1988ApJ...333..646E}, though do not
+autocorrelation function (DACF) proposed by \cite{1988ApJ...333..646E}, though do not
 include uncertainties on individual measurements. For a time series with measurements
 $a_i$ at times $t_i$ the DACF first computes the mean $\bar{a}$ from the light curve,
 here we used the sigma-clipped mean to remove the dimming events. Then for each pair of
@@ -494,7 +497,7 @@ We found a weak periodic signal near 60-70 days, but neither of the methods desc
 above show compelling evidence that the dimming events seen towards RZ~Psc are periodic
 and not random. While we presented results for single seasons' data, we saw no evidence
 for periodicity on longer periods. Aside from the 12 year variation, no periodicity has
-been seen in the past \citep{2013A&A...553L...1D}. These searches used periodograms,
+been seen in the past \cite{2013A&A...553L...1D}. These searches used periodograms,
 which are sensitive to variations with fixed phase and poorly motivated, so we explored
 autocorrelation and a similar method. That we found a possible signal can be attributed
 to both a different method, and the significantly better temporal coverage of the WASP
@@ -516,7 +519,7 @@ explore in section \ref{ss:evol}.
 Given the possible evidence for 60-70 day periodicity, the location of the occulting
 bodies could be relatively close to the star, with semi-major axes of about 0.3au. This
 distance is comparable to the 0.4au estimated for optically thin dust at 500K
-\citep{2013A&A...553L...1D}. To further investigate the location we turn to a different
+\cite{2013A&A...553L...1D}. To further investigate the location we turn to a different
 aspect of the light curves that provides information on the velocity of the occulting
 bodies; the gradients. To convert gradients measured in the light curves to velocity and
 orbital distance, we first outline a simple model, and then use this model to interpret
@@ -528,9 +531,8 @@ This section considers a simple one-dimensional model (along $x$) of a cloud tha
 star. The main assumption is that the cloud is larger than the star, and therefore for a
 cloud that passes in front of the star from left to right, the vertical ($y$) size of the
 cloud can be ignored. Thus, the cloud is a semi-opaque screen or ``curtain'' that dims
-the star, a model very similar to previous analyses of related phenomena
-\citep[e.g. KH-15D,
-J1407,][]{2006ApJ...644..510W,2014MNRAS.441.2845V,2015ApJ...800..126K}.
+the star, a model very similar to previous analyses of related phenomena (e.g. KH-15D,
+J1407 \cite{2006ApJ...644..510W,2014MNRAS.441.2845V,2015ApJ...800..126K}).
 
 The star is dimmed by the passage of a cloud located at $x_{\rm cl}$ from the star
 center. The 1-D geometric optical depth structure of the cloud is given by some function
@@ -562,12 +564,12 @@ are now $R_\star$). Then $I=1$ and $\tau(x-x_{\rm cl})$ is a step function at $u
 % \begin{equation}
 %   F = 2 \int_{u}^{1} \sqrt{1-x^2} dx
 % \end{equation}
-% \citep{2006ApJ...644..510W}. The 
+% \cite{2006ApJ...644..510W}. The 
 fraction of the total stellar flux ($F_\star = \pi$) seen is
 \begin{equation}
   f = F/F_\star = (cos^{-1}[u] - u\sqrt{1-u^2})/\pi
 \end{equation}
-\citep{2006ApJ...644..510W}, where $f$ has the same units as our normalised light
+\cite{2006ApJ...644..510W}, where $f$ has the same units as our normalised light
 curve. If the curtain is not completely optically thick then the fraction is instead
 \begin{equation}
  f = F/F_\star + (1-F/F_\star)(1-\tau)
@@ -699,8 +701,8 @@ star.
 
 In Figure \ref{fig:sma} we have converted the gradients into semi-major axes using
 equation (\ref{eq:acl}). The dashed line shows the stellar radius, estimated to be
-approximately Solar based on an age of 25Myr \citep{2013AstL...39..776P} and an effective
-temperature of 5350K \citep{2014A&A...563A.139P} using \citet{2000A&A...358..593S}
+approximately Solar based on an age of 25Myr \cite{2013AstL...39..776P} and an effective
+temperature of 5350K \cite{2014A&A...563A.139P} using \cite{2000A&A...358..593S}
 isochrones. This Figure also includes solid lines of constant gradient, computed using
 equation (\ref{eq:acl}) and $f_{\rm min} = 1-\tau$.
 
@@ -732,8 +734,8 @@ transit at apocenter) is about 0.6. Such an orientation is of course highly unli
 either the semi-major axis is larger, or the true eccentricities need to be
 higher. Perhaps coincidentally, an eccentricity of 0.6 yields a pericenter velocity of
 120km s$^{-1}$, similar to the velocity shifts in Sodium absorption lines seen towards
-RZ~Psc \citep[][noting however that the pericenter velocity is tangential, and the
-absorption lines show projected radial velocity]{2013Ap.....56..453P}.
+RZ~Psc (noting however that the pericenter velocity is tangential, and the absorption
+lines show projected radial velocity \cite{2013Ap.....56..453P}).
 
 \subsection{Summary of light curve analysis}\label{ss:wheresum}
 
@@ -745,7 +747,7 @@ the clumps near 0.3au, similar to the distance inferred for the dust seen as an 
 (though this location is also uncertain). The gradient analysis places loose constraints
 on the clump orbits ($<$10au), so is consistent with a scenario where the clumps have
 semi-major axes near 0.3au. Thus, there is no reason to disfavour the model proposed by
-\citet{2013A&A...553L...1D}, that the dimming events are associated with clumps being
+\cite{2013A&A...553L...1D}, that the dimming events are associated with clumps being
 created by planetesimal collisions within an asteroid belt analogue.
 
 The primary uncertainty lies with the disk evolutionary state. If a significant gas
@@ -767,7 +769,7 @@ gradients as providing circumstantial evidence for the planetesimal fragment sce
 Based on ten years of relatively high-cadence photometry, RZ~Psc is regularly occulted by
 what are almost certainly star-sized clumps of dust. These clumps can be optically thick,
 and previous measurements of colour variations show that at least some of the dust must
-be small \citep[e.g.][]{2003ARep...47..580S}, which may be supported by the light curve
+be small (e.g. \cite{2003ARep...47..580S}), which may be supported by the light curve
 gradient statistics. The previous interpretation of this system was that the clumps are
 the fragments arising from planetesimal collisions within an asteroid belt analogue that
 is also detected in the mid-IR. While the results from the previous section are
@@ -776,7 +778,7 @@ out the alternative of an UXOr-like hydrodynamic inner rim scenario.
 
 We now address several open questions, each taking a slightly wider view. Primary among
 these is whether the dimming events and the IR excess are caused by the same dust, as
-suggested by \citet{2013A&A...553L...1D}. Two further aspects are then the implications
+suggested by \cite{2013A&A...553L...1D}. Two further aspects are then the implications
 for the origin of the clumps, the evolutionary status of the disk in which they
 reside. We finish by considering the proposed scenarios for dippers and UXOrs, and why
 RZ~Psc appears to be a rare object that lies between these classes.
@@ -791,9 +793,9 @@ IR excess provides evidence for an Asteroid belt analogue that captures $\sim$7\
 starlight, and thus a measure of the total surface area of dust. The naive expectation is
 that the clumps orbit within the asteroid belt, and the dimming events provide therefore
 some information on the size distribution and collisional evolution within the belt
-\citep{2013A&A...553L...1D}. This expectation however relies on co-location of the clumps
+\cite{2013A&A...553L...1D}. This expectation however relies on co-location of the clumps
 and the belt, for which circumstantial evidence is provided by the light curve gradients
-and perhaps the periodicity analysis \citep[see also][]{2010A&A...524A...8G}.
+and perhaps the periodicity analysis (see also \cite{2010A&A...524A...8G}).
 
 The fraction of starlight intercepted by the dust is a variable common to both the
 dimming events and the IR excess. For the former we use the average extinction $\bar{E}$,
@@ -805,7 +807,7 @@ periodicity suggests that multiple counting is not a serious issue however. Anot
 is that the star could be reddened, and therefore that the normalised light curve has
 already had some constant level of extinction removed. Based on photospheric colours this
 unseen extinction is probably small, in the range of zero to a few percent
-\citep{2000ARep...44..611K}.
+\cite{2000ARep...44..611K}.
 
 If we assume that this average extinction applies over a uniform sphere around the star,
 and that the dust has a low albedo (i.e. the dimming events are dominated by dust
@@ -815,7 +817,7 @@ starlight intercepted by the dust.
 
 To explore possible geometries we use a simple relation between fractional luminosity
 $f$, (uniform) geometric optical depth $\tau$, and the disk opening angle $\theta$
-\citep{2014MNRAS.tmp...88K}
+\cite{2014MNRAS.438.3299K}
 \begin{equation}
   f = \tau sin(\theta/2) \, ,
 \end{equation}
@@ -830,8 +832,8 @@ Given the picture of an asteroid belt analogue and the ubiquity of disk like str
 around young stars, such a spherical distribution seems physically unlikely. It might be
 possible to generate a spherical cloud, perhaps by delivery, sublimation, and break-up of
 highly inclined comets, as suggested for other warm dust systems such as $\eta$ Corvi
-\citep{2007ApJ...658..569W,2012ApJ...747...93L}. Evidence to support this scenario may be
-provided by the transient gas absorption seen towards RZ~Psc \citep{2013Ap.....56..453P},
+\cite{2007ApJ...658..569W,2012ApJ...747...93L}. Evidence to support this scenario may be
+provided by the transient gas absorption seen towards RZ~Psc \cite{2013Ap.....56..453P},
 which we discuss further below. We disfavour this scenario primarily because even with
 comet scattering, obtaining a spherical distribution of material near the star is
 unlikely. Mid-IR interferometry might be able to show that the IR emission originates in
@@ -843,7 +845,7 @@ account for all of the dust and sample some representative part of an asteroid b
 (e.g. the midplane), is untenable because that belt would cause much more reddening than
 is observed. These characteristics distinguish RZ~Psc from heavily reddened objects,
 where the dimming events could be sampling a more representative section of the disk
-\citep[e.g.][]{2015MNRAS.451...26S}. This issue can be avoided by invoking a spherical
+(e.g. \cite{2015MNRAS.451...26S}). This issue can be avoided by invoking a spherical
 distribution of material, but the problem then shifts to whether such a distribution is
 physically plausible.
 
@@ -855,10 +857,10 @@ radially optically thick (i.e. the opening angle could be as small as 8$^\circ$)
 picture unfortunately loses any strong connection between the occulting clumps and the IR
 excess, essentially adding a free parameter that is the fraction of material that is
 ``kicked'' or resides above the disk, but seems to be the simplest and most probable
-scenario. \citet{2003ApJ...594L..47D} used essentially the same argument for UXOrs, so
+scenario. \cite{2003ApJ...594L..47D} used essentially the same argument for UXOrs, so
 our picture is therefore inevitably similar, at least in terms of geometry, as dust
 occultation models proposed for UXOrs
-\citep[e.g.][]{1997ApJ...491..885N,2000A&A...364..633N,2003ApJ...594L..47D}.
+(e.g. \cite{1997ApJ...491..885N,2000A&A...364..633N,2003ApJ...594L..47D}).
 
 We therefore conclude that while there is almost certainly some connection between the
 dimming events and the IR excess, it is at best indirect; we are (unfortunately) not
@@ -870,10 +872,10 @@ inclination.
 
 One of the distinguishing characteristics for RZ~Psc is the relatively short duration of
 the dimming events $t_{\rm dim}$, which are a few days compared to a few weeks for other
-UXOrs \citep[e.g.][]{1999AJ....118.1043H,2010A&A...511L...9C}. If we assume near-circular
+UXOrs (e.g. \cite{1999AJ....118.1043H,2010A&A...511L...9C}). If we assume near-circular
 orbits at speed $v_{\rm kep}$, $t_{\rm dim}=2(R_{\rm c}+R_\star)/v_{\rm kep}$, where the
 clump has radius $R_{\rm c}$.  The clump radius and dimming event duration are related by
-\citep[e.g.][]{2016ApJ...816...69A,2016MNRAS.457.3988B}:
+(e.g. \cite{2016ApJ...816...69A,2016MNRAS.457.3988B}):
 \begin{equation}
   R_{\rm cl} \approx 1.85 t_{\rm dim} \, \left( \frac{M_\star}{a} \right)^{1/2} - R_\star \, .
 \end{equation}
@@ -928,14 +930,14 @@ disk further below.
 A final aspect to discuss regarding the origin of the clumps, and their relation to the
 IR excess, is the transient absorption features. These are seen towards UXOrs, but also
 seen towards some main-sequence A stars
-\citep[e.g.][]{1987A&A...185..267F,2013PASP..125..759W,2014A&A...561L..10K}, so are not
+(e.g. \cite{1987A&A...185..267F,2013PASP..125..759W,2014A&A...561L..10K}), so are not
 exclusive to stars that host gas-rich disks. For A-type stars these features are
 generally interpreted as sun-grazing ``exocomets'', and the same may apply to UXOrs and
 RZ~Psc. If these objects can approach the star on isotropically distributed orbits, they
 may provide a way for the dimming events to be directly connected to the IR excess (see
 section \ref{ss:ir}). A potential issue with this interpretation is that the absorption
 lines towards RZ~Psc are so far blue-shifted, and may instead originate in an outflow
-\citep{2013Ap.....56..453P}. However, blue-shifting could also occur if evaporation
+\cite{2013Ap.....56..453P}. However, blue-shifting could also occur if evaporation
 mostly occurs near periastron passage, which might be expected if the bodies originate in
 the asteroid belt and are thus more refractory than the exocomets seen towards other
 stars (i.e. an Asteroid in the Solar System would need to pass very close to the Sun to
@@ -943,18 +945,18 @@ have a tail). Such a scenario is also consistent with the conclusion of section
 \ref{s:where} that the occulting clumps could be on eccentric orbits with high velocities
 at periastron. However, an origin closer to the host star makes the likelihood of
 isotropic orbits lower. Models of such low-periastron asteroids or comets invariably
-require a perturbing planet \citep[e.g.][]{1990A&A...236..202B,1996Icar..120..358B},
+require a perturbing planet (e.g. \cite{1990A&A...236..202B,1996Icar..120..358B}),
 which for RZ~Psc would orbit about 2.5 times more distant than the source. That is, if
 the asteroid belt is at 0.3au, the planet is near 0.75au. It may be possible that this
 planet is inclined and causes the asteroid belt to precess, thus causing the 12.4 year
-modulation of the stellar flux seen by \citet{2013A&A...553L...1D}.
+modulation of the stellar flux seen by \cite{2013A&A...553L...1D}.
 
 \subsection{Disk evolutionary state}\label{ss:evol}
 
 Many young stars with gas-rich disks show broadly similar variability (UXOrs, AA Tau
 analogues, dippers). With sporadic and deep photometric minima, and transient absorption
 lines, RZ~Psc is most similar to UXOrs and has often been associated with this class,
-albeit as a an unusual member \citep[e.g.][]{2010A&A...524A...8G}. Initial distinctions
+albeit as a an unusual member (e.g. \cite{2010A&A...524A...8G}). Initial distinctions
 were made based on the late spectral type (K0V), the relatively short dimming events, and
 a lack of near IR excess and accretion signatures. The more recent findings that the
 stellar age is probably several tens of Myr, and that the IR excess is suggestive of an
@@ -963,7 +965,7 @@ where the early gas-poor stages of main-sequence debris disk evolution can be
 studied. There remain similarities between RZ~Psc and UXOrs. Primarily, we concluded that
 the clumps that cause the dimming events are most likely seen when they are well above
 the densest regions of a disk, consistent with the turbulent inner rim scenario proposed
-by \citet{2003ApJ...594L..47D}.
+by \cite{2003ApJ...594L..47D}.
 
 % sedcomp.pro
 \begin{figure}
@@ -979,11 +981,11 @@ by \citet{2003ApJ...594L..47D}.
 
 To consider RZ~Psc within a similar framework, Figure \ref{fig:spcomp} shows the spectral
 energy distribution (SED) of RZ~Psc, and several other systems that could be considered
-to be at a similar evolutionary stage \citep[a similar plot appeared
-in][]{2014MNRAS.tmp...88K}. GM Aur hosts a transition disk, the status of HD 166191's
+to be at a similar evolutionary stage (a similar plot appeared in
+\cite{2014MNRAS.438.3299K}). GM Aur hosts a transition disk, the status of HD 166191's
 disk is ambiguous and may lie somewhere between the transition and debris phase
-\citep{2013arXiv1308.0405S,2014MNRAS.tmp...88K}, and HD 113766A hosts a bright warm
-debris disk.
+\cite{2013ApJ...777...78S,2014MNRAS.438.3299K}, and HD 113766A hosts a bright warm debris
+disk.
 
 In contrast to UXOrs, there is no obvious reason for dust around RZ~Psc to lie near 0.3
 au, as the dust sublimation distance is much closer. For RZ~Psc to host a gas-rich disk
@@ -994,40 +996,40 @@ set by IRAS are not particularly stringent, but in comparison to GM Aur the flux
 of the continuum (particularly near 7$\mu$m) and the strength of any 10$\mu$m silicate
 feature is unknown, making this comparison difficult. While the lower flux levels beyond
 20$\mu$m may suggest that the spectrum is more similar to a debris disk system like HD
-113766A, they may arise from self-shadowing of the outer disk \citep[though as noted
-by][finding parameters for shadowed outer T~Tauri disks is more difficult than for Herbig
-Ae/Be stars]{2003ApJ...594L..47D}.
+113766A, they may arise from self-shadowing of the outer disk (though as noted by
+\cite{2003ApJ...594L..47D} finding parameters for shadowed outer T~Tauri disks is more
+difficult than for Herbig Ae/Be stars).
 
 With the aid of mid-IR interferometry, the disk around HD 113766A has been shown to
-comprise two components, one at 0.6 and another at 9au \citep{2013A&A...551A.134O}. This
+comprise two components, one at 0.6 and another at 9au \cite{2013A&A...551A.134O}. This
 is by no means evidence that RZ~Psc has a similar structure, but merely reinforces the
 fact that the SED does not rule out such possibilities and that the dust need not be
 confined to a single belt near 0.3au. Similarly, the disk around HD 166191 was modelled
 as an optically thick transition disk extending from 1-25au
-\citep{2014MNRAS.tmp...88K}. Thus, it could be that RZ~Psc hosts a disk that extends from
+\cite{2014MNRAS.438.3299K}. Thus, it could be that RZ~Psc hosts a disk that extends from
 0.3 to a few tens of au, especially if the inner disk is able to shadow the outer
 disk. Evidence for shadowing could be sought by searching for the mid-IR ``see-saw''
-variability seen towards transition disks \citep[e.g.][]{2009ApJ...704L..15M}.
+variability seen towards transition disks (e.g. \cite{2009ApJ...704L..15M}).
 
 While the lack of a near-IR excess for RZ~Psc suggests that the disk is at least in the
 transition to a debris disk (i.e. has an inner hole), it does not preclude the
 possibility that gas resides in that hole and may still be accreting on to the star. No
 emission lines that would provide evidence of accretion have been seen
-\citep{2013Ap.....56..453P,2014A&A...563A.139P}, but as a further test we constructed the
+\cite{2013Ap.....56..453P,2014A&A...563A.139P}, but as a further test we constructed the
 spectral energy distribution. Specifically, we included photometry from the Galaxy
-Evolution Explorer \citep[GALEX,][]{2003SPIE.4854..336M} to quantify the level of any
+Evolution Explorer (GALEX \cite{2003SPIE.4854..336M}) to quantify the level of any
 ultraviolet (UV) excess, a complementary accretion indicator
-\citep[e.g.][]{1998ApJ...509..802C}. This exercise is hindered somewhat by the
-possibility that optical photometry was obtained when RZ~Psc was not near the quiescent
-level. To circumvent this issue we used just the Two Micron All-Sky Survey
-\citep[2MASS][]{2003tmc..book.....C} and GALEX photometry, fitting a PHOENIX atmosphere
-model \citep{2005ESASP.576..565B}, finding a best-fit effective temperature of 5485K
-(assuming no reddening, or 5600K if some reddening is allowed to improve the fit
-slightly). These temperatures are consistent with that derived from a high-resolution
-spectrum; $5350 \pm 150$K \citep{2014A&A...563A.139P}. Alternatively, fixing the
-temperature to the spectroscopic value yields a mild UV excess, less than a factor of
-two, that may be chromospheric. We therefore conclude that there is no evidence for
-accretion seen as a UV excess
+(e.g. \cite{1998ApJ...509..802C}). This exercise is hindered somewhat by the possibility
+that optical photometry was obtained when RZ~Psc was not near the quiescent level. To
+circumvent this issue we used just the Two Micron All-Sky Survey (2MASS
+\cite{2003tmc..book.....C}) and GALEX photometry, fitting a PHOENIX atmosphere model
+\cite{2005ESASP.576..565B}, finding a best-fit effective temperature of 5485K (assuming
+no reddening, or 5600K if some reddening is allowed to improve the fit slightly). These
+temperatures are consistent with that derived from a high-resolution spectrum;
+$5350 \pm 150$K \cite{2014A&A...563A.139P}. Alternatively, fixing the temperature to the
+spectroscopic value yields a mild UV excess, less than a factor of two, that may be
+chromospheric. We therefore conclude that there is no evidence for accretion seen as a UV
+excess
 
 In summary, the status of the disk surrounding RZ~Psc is unclear because the SED is
 poorly sampled. Comparison with the infrared spectra of other disks suggests that the
@@ -1049,13 +1051,13 @@ feature and allow a better comparison with other systems, such as those in Figur
       dipole, and rotation axis are shown at the left, with possible disk structures
       viewed edge-on to the right. (\emph{top}) low-mass stars (dippers) are occulted by
       co-rotating material that is accreting on to the star, and the dust sublimation
-      radius is interior to corotation \citep{2016arXiv160503985B}. (\emph{middle})
+      radius is interior to corotation \cite{2016arXiv160503985B}. (\emph{middle})
       Sun-like stars are rarely seen as dippers or UXOrs because i) dust sublimates
-      outside corotation \citep[][represented by the grey accretion column in the upper
-      half]{2016arXiv160503985B}, or ii) material lifted by turbulence is shadowed by the
-      outer disk (spiral in the lower half). (\emph{bottom}) Herbig Ae/Be stars (UXOrs)
-      are occulted by turbulence that appears above self-shadowed disks
-      \citep{2003ApJ...594L..47D}. In this type of (primordial) scenario RZ~Psc is
+      outside corotation (represented by the grey accretion column in the upper half
+      \cite{2016arXiv160503985B}), or ii) material lifted by turbulence is shadowed by
+      the outer disk (spiral in the lower half). (\emph{bottom}) Herbig Ae/Be stars
+      (UXOrs) are occulted by turbulence that appears above self-shadowed disks
+      \cite{2003ApJ...594L..47D}. In this type of (primordial) scenario RZ~Psc is
       occulted by turbulence in an evolved disk with little flaring (i.e. dust has
       settled towards the disk midplane).}\label{fig:cartoon}
   \end{center}
@@ -1065,11 +1067,11 @@ We finish by briefly discussing RZ~Psc in the context of the general classes of 
 and UXOrs, considering why neither of these classes includes many Sun-like stars like
 RZ~Psc. To aid this discussion, Figure \ref{fig:cartoon} shows the proposed scenarios for
 dippers and UXOrs, and possible reasons for a lack of significant dust-related dimming
-events towards Sun-like stars \citep[see][for similar figures for
-dippers]{2016arXiv160503985B}.
+events towards Sun-like stars (see \cite{2016arXiv160503985B} for similar figures for
+dippers).
 
 From the perspective of dippers, which so far have spectral types later than K5,
-\citet{2016arXiv160503985B} explain their tendency to be low-mass stars as a consequence
+\cite{2016arXiv160503985B} explain their tendency to be low-mass stars as a consequence
 of the relation between the magnetospheric truncation, corotation, and sublimation
 radii. The periodicity of dippers suggests that the occulting material is near the
 corotation radius, and is therefore near the base of any accretion columns. For low-mass
@@ -1082,15 +1084,15 @@ seen (grey accretion column in the middle panel of Figure \ref{fig:cartoon}).
 An as-yet unexplored corollary of this scenario is that the outer disks in dipper systems
 must not be more flared than the height of the accretion columns (as seen from the
 star). This could be because disks around low mass stars are simply less flared in
-general \citep[e.g.][]{2010ApJ...720.1668S}, or because disks in dipper systems tend to
-be more evolved than average \citep{2016ApJ...816...69A}. Of course, if Sun-like stars
+general (e.g. \cite{2010ApJ...720.1668S}), or because disks in dipper systems tend to
+be more evolved than average \cite{2016ApJ...816...69A}. Of course, if Sun-like stars
 are sufficiently flared that the inner regions are not visible, then whether the
 accretion streams are transparent or not is moot.
 
 From the perspective of UXOrs, a possible explanation for their tendency to be B and
 A-type stars is that the specifics of self-shadowing are different for Sun-like stars
-\citep{2003ApJ...594L..47D}. The reason is unclear, but it seems either that
-self-shadowing is simply rarer, or that the nature is different \citep[i.e. shadowing by
+\cite{2003ApJ...594L..47D}. The reason is unclear, but it seems either that
+self-shadowing is simply rarer, or that the nature is different \cite[i.e. shadowing by
 the inner disk regions, rather than by a puffed-up inner rim,
 see]{2004A&A...421.1075D,2007prpl.conf..555D}
 
@@ -1102,14 +1104,14 @@ not be seen as it is hidden behind a flaring outer disk.
 In this context the rarity of RZ~Psc-like objects can be explained in two ways. The first
 simply sidesteps the above discussion by interpreting the disk as a gas-poor asteroid
 belt analogue. Examples of such bright disks at a few au are rare
-\citep{2013MNRAS.433.2334K}, and only a subset of these will be oriented such that
+\cite{2013MNRAS.433.2334K}, and only a subset of these will be oriented such that
 dimming events are seen (recalling that the occulting bodies are at tens of stellar
 radii). The second explanation relies on RZ~Psc's age and SED, which suggest that it
 hosts a gas-rich transition disk that is well settled (i.e. not significantly flared),
 and hence turbulence above the disk inner edge is visible. The non-detection of RZ~Psc in
 the far-IR (Figure \ref{fig:spcomp}) might also be the result of such settling, and
 suggests that the brightness at millimeter wavelengths might be brighter than expected
-given the mid-IR brightness \citep[e.g.][]{2007prpl.conf..555D}. The rarity is again
+given the mid-IR brightness (e.g. \cite{2007prpl.conf..555D}). The rarity is again
 explained by an unlikely geometry, and perhaps that the period during which the inner
 disk can be seen above the outer disk as it settles is relatively short.
 
@@ -1119,7 +1121,7 @@ Long considered a member of the UXOr class of variables, RZ~Psc is almost comple
 occulted by dust for several days multiple times during each observing season. The
 ``typical'' UXOr (which is generally a Herbig Ae/Be object) shows week to month long
 dimming events that are thought to be caused by hydrodynamic turbulence above the disk
-inner rim, and where the outer disk is self-shadowed \citep{2003ApJ...594L..47D}. Various
+inner rim, and where the outer disk is self-shadowed \cite{2003ApJ...594L..47D}. Various
 anomalous characteristics distinguish RZ~Psc from other UXOrs; the possible age of a few
 tens of Myr, the K0V spectral type, the few-day long dimming events, and the location of
 the IR-excess emitting dust well beyond the sublimation radius. These characteristics
@@ -1176,12 +1178,12 @@ scenario avoids the need to consider primordial disk structure, in the context o
 models RZ~Psc-like variability could be explained by the evolved state of the disk, which
 may have settled enough that the inner rim is visible.
 
-\section*{Acknowledgments}
+\ack{}
 
 Data and code used in the preparation of this contribution can be found online at
 \href{https://github.com/drgmk/rzpsc}{https://github.com/drgmk/rzpsc}.
 
-We have no competing interests.
+We declare that we have no competing interests.
 
 GMK initiated the project, collated data, did most of the analysis, and wrote the
 paper. MAK contributed early ideas and the iterative event finding method. KGS provided
@@ -1192,7 +1194,7 @@ the style and content of the manuscript.
 We thank Joachim G\"urtler for sharing photometry from the Sonneberg and Harvard Plates
 in a palatable form, AAVSO observers for monitoring RZ~Psc, and Simon Hodgkin and Mark
 Wyatt for useful discussions. This paper makes use of data from the DR1 of the WASP data
-\citep{2010A&A...520L..10B} as provided by the WASP consortium, and the computing and
+\cite{2010A&A...520L..10B} as provided by the WASP consortium, and the computing and
 storage facilities at the CERIT Scientific Cloud, reg. no. CZ.1.05/3.2.00/08.0144 which
 is operated by Masaryk University, Czech Republic.
 
@@ -1203,7 +1205,639 @@ Harvard-Smithsonian Center for Astrophysics. RS is employed as an Instrumentatio
 Scientist for the Las Cumbres Observatory Global Telescope Network. KGS is funded as a
 lecturer at Vanderbilt University.
 
-\bibliography{../ref} \bibliographystyle{apj}
+%\bibliography{../ref} \bibliographystyle{vancouver}
+
+\begin{thebibliography}{10}
+
+\bibitem{2001ApJ...553L.153H}
+{Haisch} KE Jr, {Lada} EA, {Lada} CJ.
+\newblock {Disk Frequencies and Lifetimes in Young Clusters}.
+\newblock \apjl. 2001 Jun;553:L153--L156.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2001ApJ...553L.153H}.
+
+\bibitem{1993prpl.conf.1253B}
+{Backman} DE, {Paresce} F.
+\newblock {Main-sequence stars with circumstellar solid material - The VEGA
+  phenomenon}.
+\newblock In: {Levy} EH, {Lunine} JI, editors. Protostars and Planets III;
+  1993. p. 1253--1304.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1993prpl.conf.1253B}.
+
+\bibitem{2002MNRAS.334..589W}
+{Wyatt} MC, {Dent} WRF.
+\newblock {Collisional processes in extrasolar planetesimal discs - dust clumps
+  in Fomalhaut's debris disc}.
+\newblock \mnras. 2002 Aug;334:589--607.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2002MNRAS.334..589W}.
+
+\bibitem{2010RAA....10..383K}
+{Krivov} AV.
+\newblock {Debris disks: seeing dust, thinking of planetesimals and planets}.
+\newblock Research in Astronomy and Astrophysics. 2010 May;10:383--414.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2010RAA....10..383K}.
+
+\bibitem{2007ApJ...669.1298F}
+{Fabrycky} D, {Tremaine} S.
+\newblock {Shrinking Binary and Planetary Orbits by Kozai Cycles with Tidal
+  Friction}.
+\newblock \apj. 2007 Nov;669:1298--1315.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2007ApJ...669.1298F}.
+
+\bibitem{1996Sci...274..954R}
+{Rasio} FA, {Ford} EB.
+\newblock {Dynamical instabilities and the formation of extrasolar planetary
+  systems}.
+\newblock Science. 1996 Nov;274:954--956.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1996Sci...274..954R}.
+
+\bibitem{2005Natur.435..459T}
+{Tsiganis} K, {Gomes} R, {Morbidelli} A, {Levison} HF.
+\newblock {Origin of the orbital architecture of the giant planets of the Solar
+  System}.
+\newblock \nat. 2005 May;435:459--461.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2005Natur.435..459T}.
+
+\bibitem{2010ApJ...717L..57M}
+{Melis} C, {Zuckerman} B, {Rhee} JH, {Song} I.
+\newblock {The Age of the HD 15407 System and The Epoch of Final Catastrophic
+  Mass Accretion onto Terrestrial Planets Around Sun-like Stars}.
+\newblock \apjl. 2010 Jul;717:L57--L61.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2010ApJ...717L..57M}.
+
+\bibitem{2012MNRAS.425..657J}
+{Jackson} AP, {Wyatt} MC.
+\newblock {Debris from terrestrial planet formation: the Moon-forming
+  collision}.
+\newblock \mnras. 2012 Sep;425:657--679.
+
+\bibitem{2013MNRAS.433.2334K}
+{Kennedy} GM, {Wyatt} MC.
+\newblock {The bright end of the exo-Zodi luminosity function: disc evolution
+  and implications for exo-Earth detectability}.
+\newblock \mnras. 2013 Aug;433:2334--2356.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013MNRAS.433.2334K}.
+
+\bibitem{2009MNRAS.399..385B}
+{Booth} M, {Wyatt} MC, {Morbidelli} A, {Moro-Mart{\'{\i}}n} A, {Levison} HF.
+\newblock {The history of the Solar system's debris disc: observable properties
+  of the Kuiper belt}.
+\newblock \mnras. 2009 Oct;399:385--398.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2009MNRAS.399..385B}.
+
+\bibitem{2014MNRAS.438.3299K}
+{Kennedy} GM, {Murphy} SJ, {Lisse} CM, {M{\'e}nard} F, {Sitko} ML, {Wyatt} MC,
+  et~al.
+\newblock {Evolution from protoplanetary to debris discs: the transition disc
+  around HD 166191}.
+\newblock \mnras. 2014 Mar;438:3299--3309.
+
+\bibitem{2014Sci...345.1032M}
+{Meng} HYA, {Su} KYL, {Rieke} GH, {Stevenson} DJ, {Plavchan} P, {Rujopakarn} W,
+  et~al.
+\newblock {Large impacts around a solar-analog star in the era of terrestrial
+  planet formation}.
+\newblock Science. 2014 Aug;345:1032--1035.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2014Sci...345.1032M}.
+
+\bibitem{1945ApJ...102..168J}
+{Joy} AH.
+\newblock {T Tauri Variable Stars.}
+\newblock \apj. 1945 Sep;102:168.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1945ApJ...102..168J}.
+
+\bibitem{1994AJ....108.1906H}
+{Herbst} W, {Herbst} DK, {Grossman} EJ, {Weinstein} D.
+\newblock {Catalogue of UBVRI photometry of T Tauri stars and analysis of the
+  causes of their variability}.
+\newblock \aj. 1994 Nov;108:1906--1923.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1994AJ....108.1906H}.
+
+\bibitem{2011ApJ...733...50M}
+{Morales-Calder{\'o}n} M, {Stauffer} JR, {Hillenbrand} LA, {Gutermuth} R,
+  {Song} I, {Rebull} LM, et~al.
+\newblock {Ysovar: The First Sensitive, Wide-area, Mid-infrared Photometric
+  Monitoring of the Orion Nebula Cluster}.
+\newblock \apj. 2011 May;733:50.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2011ApJ...733...50M}.
+
+\bibitem{2014AJ....147...82C}
+{Cody} AM, {Stauffer} J, {Baglin} A, {Micela} G, {Rebull} LM, {Flaccomio} E,
+  et~al.
+\newblock {CSI 2264: Simultaneous Optical and Infrared Light Curves of Young
+  Disk-bearing Stars in NGC 2264 with CoRoT and Spitzer --- Evidence for
+  Multiple Origins of Variability}.
+\newblock \aj. 2014 Apr;147:82.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2014AJ....147...82C}.
+
+\bibitem{2012AJ....143...72M}
+{Mamajek} EE, {Quillen} AC, {Pecaut} MJ, {Moolekamp} F, {Scott} EL, {Kenworthy}
+  MA, et~al.
+\newblock {Planetary Construction Zones in Occultation: Discovery of an
+  Extrasolar Ring System Transiting a Young Sun-like Star and Future Prospects
+  for Detecting Eclipses by Circumsecondary and Circumplanetary Disks}.
+\newblock \aj. 2012 Mar;143:72.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2012AJ....143...72M}.
+
+\bibitem{2013AJ....146..112R}
+{Rodriguez} JE, {Pepper} J, {Stassun} KG, {Siverd} RJ, {Cargile} P, {Beatty}
+  TG, et~al.
+\newblock {Occultation of the T Tauri Star RW Aurigae A by its Tidally
+  Disrupted Disk}.
+\newblock \aj. 2013 Nov;146:112.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013AJ....146..112R}.
+
+\bibitem{2016MNRAS.457.3988B}
+{Boyajian} TS, {LaCourse} DM, {Rappaport} SA, {Fabrycky} D, {Fischer} DA,
+  {Gandolfi} D, et~al.
+\newblock {Planet Hunters IX. KIC 8462852 - where's the flux?}
+\newblock \mnras. 2016 Apr;457:3988--4004.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2016MNRAS.457.3988B}.
+
+\bibitem{1999AJ....118.1043H}
+{Herbst} W, {Shevchenko} VS.
+\newblock {A Photometric Catalog of Herbig AE/BE Stars and Discussion of the
+  Nature and Cause of the Variations of UX Orionis Stars}.
+\newblock \aj. 1999 Aug;118:1043--1060.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1999AJ....118.1043H}.
+
+\bibitem{2000A&A...364..633N}
+{Natta} A, {Whitney} BA.
+\newblock {Models of scattered light in UXORs}.
+\newblock \aap. 2000 Dec;364:633--640.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2000A&A...364..633N}.
+
+\bibitem{2013A&A...557A..77B}
+{Bouvier} J, {Grankin} K, {Ellerbroek} LE, {Bouy} H, {Barrado} D.
+\newblock {AA Tauri's sudden and long-lasting deepening: enhanced extinction by
+  its circumstellar disk}.
+\newblock \aap. 2013 Sep;557:A77.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013A&A...557A..77B}.
+
+\bibitem{2015AJ....150...32R}
+{Rodriguez} JE, {Pepper} J, {Stassun} KG, {Siverd} RJ, {Cargile} P, {Weintraub}
+  DA, et~al.
+\newblock {V409 Tau as Another AA Tau: Photometric Observations of Stellar
+  Occultations by the Circumstellar Disk}.
+\newblock \aj. 2015 Jul;150:32.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2015AJ....150...32R}.
+
+\bibitem{1999MNRAS.303..521M}
+{Mikolajewski} M, {Graczyk} D.
+\newblock {Is the eclipsing variable EE CEP a cousin of epsilon Aur?}
+\newblock \mnras. 1999 Mar;303:521--524.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1999MNRAS.303..521M}.
+
+\bibitem{2014ApJ...788...41D}
+{Dong} S, {Katz} B, {Prieto} JL, {Udalski} A, {Kozlowski} S, {Street} RA,
+  et~al.
+\newblock {OGLE-LMC-ECL-11893: The Discovery of a Long-period Eclipsing Binary
+  with a Circumstellar Disk}.
+\newblock \apj. 2014 Jun;788:41.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2014ApJ...788...41D}.
+
+\bibitem{2015ApJS..220...14K}
+{Kloppenborg} BK, {Stencel} RE, {Monnier} JD, {Schaefer} GH, {Baron} F,
+  {Tycner} C, et~al.
+\newblock {Interferometry of {$\epsilon$} Aurigae: Characterization of the
+  Asymmetric Eclipsing Disk}.
+\newblock \apjs. 2015 Sep;220:14.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2015ApJS..220...14K}.
+
+\bibitem{1988SvAL...14...27G}
+{Grinin} VP.
+\newblock {On the Blue Emission Visible during Deep Minima of Young Irregular
+  Variables}.
+\newblock Soviet Astronomy Letters. 1988 Feb;14:27.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1988SvAL...14...27G}.
+
+\bibitem{2001ARep...45...51R}
+{Rostopchina} AN, {Grinin} VP, {Shakhovskoi} DN.
+\newblock {Photometry and Polarimetry of the Classical Herbig Ae Star VV Ser}.
+\newblock Astronomy Reports. 2001 Jan;45:51--59.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2001ARep...45...51R}.
+
+\bibitem{1999A&A...349..619B}
+{Bouvier} J, {Chelli} A, {Allain} S, {Carrasco} L, {Costero} R, {Cruz-Gonzalez}
+  I, et~al.
+\newblock {Magnetospheric accretion onto the T Tauri star AA Tauri. I.
+  Constraints from multisite spectrophotometric monitoring}.
+\newblock \aap. 1999 Sep;349:619--635.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1999A&A...349..619B}.
+
+\bibitem{1994ASPC...62...63G}
+{Grinin} VP.
+\newblock {Polarimetric activity of Herbig Ae/Be stars}.
+\newblock In: {The} PS, {Perez} MR, {van den Heuvel} EPJ, editors. The Nature
+  and Evolutionary Status of Herbig Ae/Be Stars. vol.~62 of Astronomical
+  Society of the Pacific Conference Series; 1994. p.~63.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1994ASPC...62...63G}.
+
+\bibitem{2016ApJ...816...69A}
+{Ansdell} M, {Gaidos} E, {Rappaport} SA, {Jacobs} TL, {LaCourse} DM, {Jek} KJ,
+  et~al.
+\newblock {Young ``Dipper'' Stars in Upper Sco and Oph Observed by K2}.
+\newblock \apj. 2016 Jan;816:69.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2016ApJ...816...69A}.
+
+\bibitem{2003ApJ...594L..47D}
+{Dullemond} CP, {van den Ancker} ME, {Acke} B, {van Boekel} R.
+\newblock {Explaining UX Orionis Star Variability with Self-shadowed Disks}.
+\newblock \apjl. 2003 Sep;594:L47--L50.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2003ApJ...594L..47D}.
+
+\bibitem{2016arXiv160503985B}
+{Bodman} EHL, {Quillen} AC, {Ansdell} M, {Hippke} M, {Boyajian} TS, {Mamajek}
+  EE, et~al.
+\newblock {Dippers and Dusty Disks Edges: A Unified Model}.
+\newblock ArXiv e-prints. 2016 May;Available from:
+  \url{http://adsabs.harvard.edu/abs/2016arXiv160503985B}.
+
+\bibitem{1985PZ.....22..181Z}
+{Zajtseva} GV.
+\newblock {Photometric features of RZ Piscium.}
+\newblock Peremennye Zvezdy. 1985;22:181--190.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1985PZ.....22..181Z}.
+
+\bibitem{1999A&AS..140..293G}
+{G{\"u}rtler} J, {Friedemann} C, {Reimann} HG, {Splittgerber} E, {Rudolph} E.
+\newblock {A comparative study of the long-term light variations of six young
+  irregular variables}.
+\newblock \aaps. 1999 Dec;140:293--307.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1999A&AS..140..293G}.
+
+\bibitem{2003ARep...47..580S}
+{Shakhovskoi} DN, {Grinin} VP, {Rostopchina} AN.
+\newblock {Photometric and Polarimetric Activity of RZ Psc}.
+\newblock Astronomy Reports. 2003 Jul;47:580--586.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2003ARep...47..580S}.
+
+\bibitem{2010A&A...524A...8G}
+{Grinin} VP, {Potravnov} IS, {Musaev} FA.
+\newblock {The evolutionary status of the UX Orionis star RZ Piscium}.
+\newblock \aap. 2010 Dec;524:A8.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2010A&A...524A...8G}.
+
+\bibitem{2013A&A...553L...1D}
+{de Wit} WJ, {Grinin} VP, {Potravnov} IS, {Shakhovskoi} DN, {M{\"u}ller} A,
+  {Moerchen} M.
+\newblock {Active asteroid belt causes the UXOR phenomenon in RZ Piscium}.
+\newblock \aap. 2013 May;553:L1.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013A&A...553L...1D}.
+
+\bibitem{1980PZ.....21..310K}
+{Kardopolov} VI, {Sakhanenok} VV, {Shutemova} NA.
+\newblock {On the character of brightness variations of RZ Pisces.}
+\newblock Peremennye Zvezdy. 1980;21:310--313.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1980PZ.....21..310K}.
+
+\bibitem{1981Afz....17...87P}
+{Pugach} AF.
+\newblock {Phenomenological model of the antiflare star RZ PSC}.
+\newblock Astrofizika. 1981 Jan;17:87--96.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1981Afz....17...87P}.
+
+\bibitem{2004ARep...48..470P}
+{Pugach} AF.
+\newblock {Optical Properties of the Circumstellar Dust around Stars with
+  Aperiodic Fadings}.
+\newblock Astronomy Reports. 2004 Jun;48:470--475.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2004ARep...48..470P}.
+
+\bibitem{1991Afz....34..333K}
+{Kiselev} NN, {Minikulov} NK, {Chernova} GP.
+\newblock {Strong increase of the linear polarization of RZ PSC at deep
+  minimum.}
+\newblock Astrofizika. 1991;34:333--343.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1991Afz....34..333K}.
+
+\bibitem{2014A&A...563A.139P}
+{Potravnov} IS, {Grinin} VP, {Ilyin} IV, {Shakhovskoy} DN.
+\newblock {An in-depth analysis of the RZ Piscium atmosphere}.
+\newblock \aap. 2014 Mar;563:A139.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2014A&A...563A.139P}.
+
+\bibitem{1999AstL...25..243R}
+{Rostopchina} AN, {Grinin} VP, {Shakhovskoi} DN.
+\newblock {Cyclic variability of UX Ori Stars: UX Ori, SV Cep, and RZ Psc}.
+\newblock Astronomy Letters. 1999 Apr;25:243--249.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1999AstL...25..243R}.
+
+\bibitem{2006PASP..118.1407P}
+{Pollacco} DL, {Skillen} I, {Collier Cameron} A, {Christian} DJ, {Hellier} C,
+  {Irwin} J, et~al.
+\newblock {The WASP Project and the SuperWASP Cameras}.
+\newblock \pasp. 2006 Oct;118:1407--1418.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2006PASP..118.1407P}.
+
+\bibitem{2007PASP..119..923P}
+{Pepper} J, {Pogge} RW, {DePoy} DL, {Marshall} JL, {Stanek} KZ, {Stutz} AM,
+  et~al.
+\newblock {The Kilodegree Extremely Little Telescope (KELT): A Small Robotic
+  Telescope for Large-Area Synoptic Surveys}.
+\newblock \pasp. 2007 Aug;119:923--935.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2007PASP..119..923P}.
+
+\bibitem{1973IBVS..783....1K}
+{Karetnikov} VG, {Pugach} AF.
+\newblock {A Flare of Anti-Flare Star RZ Psc}.
+\newblock Information Bulletin on Variable Stars. 1973 Apr;783:1.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1973IBVS..783....1K}.
+
+\bibitem{1997AcA....47..467P}
+{Pojmanski} G.
+\newblock {The All Sky Automated Survey}.
+\newblock \actaa. 1997 Oct;47:467--481.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1997AcA....47..467P}.
+
+\bibitem{2014Ap.....57..491P}
+{Potravnov} IS, {Gorynya} NA, {Grinin} VP, {Minikulov} NK.
+\newblock {Radial Velocity Fluctuations of RZ Psc}.
+\newblock Astrophysics. 2014 Dec;57:491--499.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2014Ap.....57..491P}.
+
+\bibitem{2014MNRAS.441.2845V}
+{van Werkhoven} TIM, {Kenworthy} MA, {Mamajek} EE.
+\newblock {Analysis of 1SWASP J140747.93-394542.6 eclipse fine-structure: hints
+  of exomoons}.
+\newblock \mnras. 2014 Jul;441:2845--2854.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2014MNRAS.441.2845V}.
+
+\bibitem{2012ApJ...761..123S}
+{Siverd} RJ, {Beatty} TG, {Pepper} J, {Eastman} JD, {Collins} K, {Bieryla} A,
+  et~al.
+\newblock {KELT-1b: A Strongly Irradiated, Highly Inflated, Short Period, 27
+  Jupiter-mass Companion Transiting a Mid-F Star}.
+\newblock \apj. 2012 Dec;761:123.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2012ApJ...761..123S}.
+
+\bibitem{1988ApJ...333..646E}
+{Edelson} RA, {Krolik} JH.
+\newblock {The discrete correlation function - A new method for analyzing
+  unevenly sampled variability data}.
+\newblock \apj. 1988 Oct;333:646--659.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1988ApJ...333..646E}.
+
+\bibitem{2006ApJ...644..510W}
+{Winn} JN, {Hamilton} CM, {Herbst} WJ, {Hoffman} JL, {Holman} MJ, {Johnson} JA,
+  et~al.
+\newblock {The Orbit and Occultations of KH 15D}.
+\newblock \apj. 2006 Jun;644:510--524.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2006ApJ...644..510W}.
+
+\bibitem{2015ApJ...800..126K}
+{Kenworthy} MA, {Mamajek} EE.
+\newblock {Modeling Giant Extrasolar Ring Systems in Eclipse and the Case of
+  J1407b: Sculpting by Exomoons?}
+\newblock \apj. 2015 Feb;800:126.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2015ApJ...800..126K}.
+
+\bibitem{2013AstL...39..776P}
+{Potravnov} IS, {Grinin} VP.
+\newblock {On the kinematic age of RZ Psc}.
+\newblock Astronomy Letters. 2013 Nov;39:776--780.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013AstL...39..776P}.
+
+\bibitem{2000A&A...358..593S}
+{Siess} L, {Dufour} E, {Forestini} M.
+\newblock {An internet server for pre-main sequence tracks of low- and
+  intermediate-mass stars}.
+\newblock \aap. 2000 Jun;358:593--599.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2000A&A...358..593S}.
+
+\bibitem{2013Ap.....56..453P}
+{Potravnov} IS, {Grinin} VP, {Ilyin} IV.
+\newblock {Observation of Circumstellar Gas in the Neighborhood of RZ Psc}.
+\newblock Astrophysics. 2013 Dec;56:453--460.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013Ap.....56..453P}.
+
+\bibitem{2000ARep...44..611K}
+{Kaminski{\u \i}} BM, {Kovalchuk} GU, {Pugach} AF.
+\newblock {Spectral Features of RZ Psc, a Cool Star with Algol-like Brightness
+  Minima}.
+\newblock Astronomy Reports. 2000 Sep;44:611--623.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2000ARep...44..611K}.
+
+\bibitem{2007ApJ...658..569W}
+{Wyatt} MC, {Smith} R, {Greaves} JS, {Beichman} CA, {Bryden} G, {Lisse} CM.
+\newblock {Transience of Hot Dust around Sun-like Stars}.
+\newblock \apj. 2007 Mar;658:569--583.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2007ApJ...658..569W}.
+
+\bibitem{2012ApJ...747...93L}
+{Lisse} CM, {Wyatt} MC, {Chen} CH, {Morlok} A, {Watson} DM, {Manoj} P, et~al.
+\newblock {Spitzer Evidence for a Late-heavy Bombardment and the Formation of
+  Ureilites in {$\eta$} Corvi at \~{}1 Gyr}.
+\newblock \apj. 2012 Mar;747:93.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2012ApJ...747...93L}.
+
+\bibitem{2015MNRAS.451...26S}
+{Scholz} A, {Mu{\v z}i{\'c}} K, {Geers} V.
+\newblock {The young low-mass star ISO-Oph-50: extreme variability induced by a
+  clumpy, evolving circumstellar disc}.
+\newblock \mnras. 2015 Jul;451:26--33.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2015MNRAS.451...26S}.
+
+\bibitem{1997ApJ...491..885N}
+{Natta} A, {Grinin} VP, {Mannings} V, {Ungerechts} H.
+\newblock {The Evolutionary Status of UX Orionis-Type Stars}.
+\newblock \apj. 1997 Dec;491:885--890.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1997ApJ...491..885N}.
+
+\bibitem{2010A&A...511L...9C}
+{Caballero} JA.
+\newblock {The occultation events of the Herbig Ae/Be star V1247 Orionis}.
+\newblock \aap. 2010 Feb;511:L9.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2010A&A...511L...9C}.
+
+\bibitem{1987A&A...185..267F}
+{Ferlet} R, {Vidal-Madjar} A, {Hobbs} LM.
+\newblock {The Beta Pictoris circumstellar disk. V - Time variations of the CA
+  II-K line}.
+\newblock \aap. 1987 Oct;185:267--270.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1987A&A...185..267F}.
+
+\bibitem{2013PASP..125..759W}
+{Welsh} BY, {Montgomery} S.
+\newblock {Circumstellar Gas-Disk Variability Around A-Type Stars: The
+  Detection of Exocomets?}
+\newblock \pasp. 2013 Jul;125:759--774.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013PASP..125..759W}.
+
+\bibitem{2014A&A...561L..10K}
+{Kiefer} F, {Lecavelier des Etangs} A, {Augereau} JC, {Vidal-Madjar} A,
+  {Lagrange} AM, {Beust} H.
+\newblock {Exocomets in the circumstellar gas disk of HD 172555}.
+\newblock \aap. 2014 Jan;561:L10.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2014A&A...561L..10K}.
+
+\bibitem{1990A&A...236..202B}
+{Beust} H, {Vidal-Madjar} A, {Ferlet} R, {Lagrange-Henri} AM.
+\newblock {The Beta Pictoris circumstellar disk. X - Numerical simulations of
+  infalling evaporating bodies}.
+\newblock \aap. 1990 Sep;236:202--216.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1990A&A...236..202B}.
+
+\bibitem{1996Icar..120..358B}
+{Beust} H, {Morbidelli} A.
+\newblock {Mean-Motion Resonances as a Source for Infalling Comets toward
+  {$\beta$} Pictoris}.
+\newblock \icarus. 1996 Apr;120:358--370.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1996Icar..120..358B}.
+
+\bibitem{2013ApJ...777...78S}
+{Schneider} A, {Song} I, {Melis} C, {Zuckerman} B, {Bessell} M, {Hufford} T,
+  et~al.
+\newblock {The Nearby, Young, Isolated, Dusty Star HD 166191}.
+\newblock \apj. 2013 Nov;777:78.
+
+\bibitem{2013A&A...551A.134O}
+{Olofsson} J, {Henning} T, {Nielbock} M, {Augereau} JC, {Juh{\`a}sz} A,
+  {Oliveira} I, et~al.
+\newblock {The twofold debris disk around HD 113766 A. Warm and cold dust as
+  seen with VLTI/MIDI and Herschel/PACS}.
+\newblock \aap. 2013 Mar;551:A134.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2013A&A...551A.134O}.
+
+\bibitem{2009ApJ...704L..15M}
+{Muzerolle} J, {Flaherty} K, {Balog} Z, {Furlan} E, {Smith} PS, {Allen} L,
+  et~al.
+\newblock {Evidence for Dynamical Changes in a Transitional Protoplanetary Disk
+  with Mid-Infrared Variability}.
+\newblock \apjl. 2009 Oct;704:L15--L19.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2009ApJ...704L..15M}.
+
+\bibitem{2003SPIE.4854..336M}
+{Martin} C, {Barlow} T, {Barnhart} W, {Bianchi} L, {Blakkolb} BK, {Bruno} D,
+  et~al.
+\newblock {The Galaxy Evolution Explorer}.
+\newblock In: {Blades} JC, {Siegmund} OHW, editors. Future EUV/UV and Visible
+  Space Astrophysics Missions and Instrumentation.. vol. 4854 of \procspie;
+  2003. p. 336--350.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2003SPIE.4854..336M}.
+
+\bibitem{1998ApJ...509..802C}
+{Calvet} N, {Gullbring} E.
+\newblock {The Structure and Emission of the Accretion Shock in T Tauri Stars}.
+\newblock \apj. 1998 Dec;509:802--818.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/1998ApJ...509..802C}.
+
+\bibitem{2003tmc..book.....C}
+{Cutri} RM, et~al.
+\newblock {2MASS All Sky Catalog of point sources.}; 2003.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2003tmc..book.....C}.
+
+\bibitem{2005ESASP.576..565B}
+{Brott} I, {Hauschildt} PH.
+\newblock {A PHOENIX Model Atmosphere Grid for Gaia}.
+\newblock In: {Turon} C, {O'Flaherty} KS, {Perryman} MAC, editors. The
+  Three-Dimensional Universe with Gaia. vol. 576 of ESA Special Publication;
+  2005. p. 565.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2005ESASP.576..565B}.
+
+\bibitem{2010ApJ...720.1668S}
+{Sz{\H u}cs} L, {Apai} D, {Pascucci} I, {Dullemond} CP.
+\newblock {Stellar-mass-dependent Disk Structure in Coeval Planet-forming
+  Disks}.
+\newblock \apj. 2010 Sep;720:1668--1673.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2010ApJ...720.1668S}.
+
+\bibitem{2004A&A...421.1075D}
+{Dullemond} CP, {Dominik} C.
+\newblock {The effect of dust settling on the appearance of protoplanetary
+  disks}.
+\newblock \aap. 2004 Jul;421:1075--1086.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2004A&A...421.1075D}.
+
+\bibitem{2007prpl.conf..555D}
+{Dullemond} CP, {Hollenbach} D, {Kamp} I, {D'Alessio} P.
+\newblock {Models of the Structure and Evolution of Protoplanetary Disks}.
+\newblock Protostars and Planets V. 2007;p. 555--572.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2007prpl.conf..555D}.
+
+\bibitem{2010A&A...520L..10B}
+{Butters} OW, {West} RG, {Anderson} DR, {Collier Cameron} A, {Clarkson} WI,
+  {Enoch} B, et~al.
+\newblock {The first WASP public data release}.
+\newblock \aap. 2010 Sep;520:L10.
+\newblock Available from:
+  \url{http://adsabs.harvard.edu/abs/2010A&A...520L..10B}.
+
+\end{thebibliography}
 
 %\input{yearlyfigs}
 
