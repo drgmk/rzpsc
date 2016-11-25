@@ -1,0 +1,112 @@
+\                                                                               
+\fixlen = T
+\primary    = 0
+\RowsRetrieved =                40   
+\QueryTime     =  00:00:02.45615               
+\ORIGIN  = 'IPAC Infrared Science Archive (IRSA), Caltech/JPL'
+\DATETIME= '2015-03-19 03:56:17'
+\DataTag = 'ADS/.Gator'
+\DATABASE= 'AllWISE Multiepoch Photometry Table (wise_allwise_p3as_mep)'
+\EQUINOX = 'J2000'
+\SKYAREA = 'within 10 arcsec of  ra=17.42523 dec=+27.95054 Eq J2000 '
+\StatusFile = '/workspace/TMP_2Figr7_30647/Gator/irsa/21267/log.21267.html'
+\SQL     = 'WHERE (no constraints) 
+\SQL     = 'SELECT (26 column names follow in next row.)'
+\
+\ source_id_mf
+\ ___ Source id from Multiframe (coadd id and source number)
+\ ra (deg) 
+\ ___ right ascension (J2000)
+\ dec (deg) 
+\ ___ declination (J2000)
+\ nb
+\ ___ number of PSF components used in profile fit for source
+\ na
+\ ___ active deblend flag (=1 if actively deblended)
+\ cc_flags
+\ ___ contamination and confusion flags affecting the source in each band
+\ cat
+\ ___ flag indicating whether source will be in catalog  1= in ALLWISE Catalog
+\ frame_id
+\ ___ frameset identifier
+\ mjd (day) 
+\ ___ modified Julian date of the mid-point of the observation of the frame
+\ w1mpro_ep (mag) 
+\ ___ Single-exposure profile-fit  magnitude, band 1
+\ w1sigmpro_ep (mag) 
+\ ___ Single-exposure profile-fit photometric measurement uncertainty, band 1
+\ w1rchi2_ep
+\ ___ Reduced chi^2 of single-exposure profile-fit, band 1
+\ w2mpro_ep (mag) 
+\ ___ Single-exposure profile-fit  magnitude, band 2
+\ w2sigmpro_ep (mag) 
+\ ___ Single-exposure profile-fit photometric measurement uncertainty, band 2
+\ w2rchi2_ep
+\ ___ Reduced chi^2 of single-exposure profile-fit, band 2
+\ w3mpro_ep (mag) 
+\ ___ Single-exposure profile-fit  magnitude, band 3
+\ w3sigmpro_ep (mag) 
+\ ___ Single-exposure profile-fit photometric measurement uncertainty, band 3
+\ w3rchi2_ep
+\ ___ Reduced chi^2 of single-exposure profile-fit, band 3
+\ w4mpro_ep (mag) 
+\ ___ Single-exposure profile-fit  magnitude, band 4
+\ w4sigmpro_ep (mag) 
+\ ___ Single-exposure profile-fit photometric measurement uncertainty, band 4
+\ w4rchi2_ep
+\ ___ Reduced chi^2 of single-exposure profile-fit, band 4
+\ qi_fact
+\ ___ Frame image quality score
+\ saa_sep (deg) 
+\ ___ SAA separation. Distance from frame center to SAA boundary
+\ moon_masked
+\ ___ flag (0/1) indicating whether frame is within the moon-mask area in each band
+\ angle (deg) 
+\ ___ Position Angle in degree.
+\ dist (arcsec) 
+\ ___ Distance between the target position and each source in arcsec.
+\
+|                source_id_mf|         ra|        dec| nb| na|cc_flags|cat| frame_id|           mjd|w1mpro_ep|w1sigmpro_ep|w1rchi2_ep|w2mpro_ep|w2sigmpro_ep|w2rchi2_ep|w3mpro_ep|w3sigmpro_ep|w3rchi2_ep|w4mpro_ep|w4sigmpro_ep|w4rchi2_ep|qi_fact|saa_sep|moon_masked|             dist|           angle|
+|                        char|     double|     double|int|int|    char|int|     char|        double|   double|      double|    double|   double|      double|    double|   double|      double|    double|   double|      double|    double| double|    int|       char|           double|          double|
+|                            |        deg|        deg|   |   |        |   |         |           day|      mag|         mag|          |      mag|         mag|          |      mag|         mag|          |      mag|         mag|          |       |    deg|           |           arcsec|             deg|
+|                        null|       null|       null|nul|nul|    null|nul|     null|          null|     null|        null|      null|     null|        null|      null|     null|        null|      null|     null|        null|      null|   null|   null|       null|             null|            null|
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00906b180 55209.54293010     9.332        0.024  2.155e+00     8.908        0.031  2.077e+00     6.319        0.022  6.104e+00     5.068        0.047  1.120e+00     1.0      66        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00910a181 55209.67536210     9.327        0.023  2.168e+00     8.978        0.021  2.700e+00     6.288        0.021  5.217e+00     5.001        0.056  1.047e+00     1.0      49        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00914a180 55209.80766690     9.329        0.022  2.161e+00     8.957        0.021  2.434e+00     6.286        0.020  5.164e+00     5.046        0.050  1.081e+00     1.0      33        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00917a157 55209.87388290     9.296        0.023  2.329e+00     8.922        0.023  2.136e+00     6.269        0.020  4.772e+00     5.052        0.057  1.091e+00     1.0      34        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00918a180 55209.93997160     9.335        0.022  2.152e+00     8.954        0.022  2.399e+00     6.300        0.022  5.537e+00     5.100        0.063  1.199e+00     1.0      39        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00921a156 55210.00618760     9.349        0.022  2.151e+00     8.934        0.023  2.215e+00     6.306        0.020  5.711e+00     5.083        0.047  1.155e+00     1.0      51        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00922a180 55210.07227630     9.367        0.033  2.196e+00     8.934        0.024  2.217e+00     6.257        0.019  4.540e+00     5.111        0.071  1.234e+00     1.0      65        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00922a181 55210.07240370     9.395        0.024  2.363e+00     8.913        0.025  2.094e+00     6.308        0.028  5.754e+00     5.054        0.057  1.094e+00     1.0      66        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00925a156 55210.13849240     9.346        0.023  2.148e+00     8.971        0.022  2.602e+00     6.308        0.024  5.765e+00     5.018        0.059  1.053e+00     1.0      82        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00929a156 55210.27079710     9.349        0.031  2.151e+00     8.915        0.022  2.105e+00     6.322        0.020  6.179e+00     5.095        0.049  1.187e+00     1.0     122        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 00933a157 55210.40322910     9.368        0.022  2.202e+00     8.938        0.028  2.246e+00     6.330        0.018  6.458e+00     5.015        0.081  1.051e+00     1.0     102        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06553b123 55396.33042060     9.252        0.020  2.873e+00     8.823        0.026  2.503e+00     6.082        0.018  5.087e+00     4.965        0.045  1.066e+00     1.0      36        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06557b123 55396.46272440     9.255        0.018  2.815e+00     8.791        0.022  3.051e+00     6.085        0.014  4.996e+00     5.016        0.061  1.051e+00     1.0      42        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06561b123 55396.59502810     9.254        0.020  2.836e+00     8.751        0.017  4.121e+00      null         null       null      null         null       null     1.0      68        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06564a099 55396.66124360     9.284        0.021  2.435e+00     8.877        0.026  2.068e+00     6.122        0.024  4.202e+00     4.925        0.052  1.140e+00     1.0      84        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06565b123 55396.72733180     9.282        0.020  2.463e+00     8.808        0.020  2.734e+00     6.093        0.019  4.784e+00     4.950        0.042  1.087e+00     1.0     103        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06568a098 55396.79342000     9.254        0.025  2.838e+00     8.810        0.023  2.706e+00     6.126        0.016  4.129e+00     4.902        0.050  1.212e+00     1.0     123        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06568a099 55396.79354740     9.324        0.028  2.175e+00     8.884        0.018  2.053e+00     6.063        0.015  5.697e+00     4.935        0.061  1.116e+00     1.0     123        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06569b123 55396.85963560     9.270        0.027  2.608e+00     8.852        0.029  2.196e+00     6.055        0.017  6.013e+00     4.948        0.042  1.089e+00     1.0     123        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06572a098 55396.92572380     9.279        0.025  2.493e+00     8.868        0.022  2.097e+00     6.122        0.019  4.199e+00     5.041        0.052  1.074e+00     1.0     103        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06573b123 55396.99193940     9.289        0.021  2.390e+00     8.787        0.020  3.158e+00     6.134        0.023  4.030e+00     4.864        0.058  1.383e+00     1.0      85        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06576a098 55397.05802760     9.239        0.021  3.110e+00     8.793        0.018  3.024e+00     6.082        0.016  5.083e+00     4.920        0.052  1.155e+00     1.0      70        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06580a098 55397.19033130     9.251        0.025  2.893e+00     8.755        0.025  3.976e+00     6.049        0.014  6.256e+00     4.868        0.042  1.360e+00     1.0      53        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 06584a098 55397.32263500     9.261        0.021  2.732e+00     8.826        0.019  2.467e+00     6.028        0.015  7.185e+00     5.030        0.055  1.062e+00     1.0      36        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11866a180 55572.03057620     9.352        0.027  2.156e+00     8.954        0.023  2.402e+00      null         null       null      null         null       null     1.0      55        0000          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11870b180 55572.16288060     9.392        0.025  2.341e+00     8.989        0.022  2.873e+00      null         null       null      null         null       null     1.0      89        0011          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11874a180 55572.29518500     9.421        0.025  2.621e+00     9.040        0.026  3.856e+00      null         null       null      null         null       null     1.0     130        0011          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11877a156 55572.36127350     9.407        0.022  2.472e+00      null         null       null      null         null       null      null         null       null     1.0     114        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11878a180 55572.42736200     9.380        0.025  2.258e+00      null         null       null      null         null       null      null         null       null     1.0      94        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11881a156 55572.49357790     9.396        0.024  2.368e+00      null         null       null      null         null       null      null         null       null     1.0      77        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11882a180 55572.55966640     9.393        0.023  2.347e+00      null         null       null      null         null       null      null         null       null     1.0      62        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11885a156 55572.62575490     9.483        0.027  3.572e+00      null         null       null      null         null       null      null         null       null     1.0      53        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11889a156 55572.75805940     9.396        0.023  2.371e+00      null         null       null      null         null       null      null         null       null     1.0      35        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11953a159 55574.87429300     9.412        0.026  2.526e+00      null         null       null      null         null       null      null         null       null     1.0      34        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11954a183 55574.94038150     9.364        0.020  2.186e+00      null         null       null      null         null       null      null         null       null     1.0      40        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11957a158 55575.00647000     9.399        0.030  2.399e+00      null         null       null      null         null       null      null         null       null     1.0      51        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11958a183 55575.07268590     9.440        0.036  2.860e+00      null         null       null      null         null       null      null         null       null     1.0      66        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11961a159 55575.13877450     9.492        0.028  3.746e+00      null         null       null      null         null       null      null         null       null     1.0      83        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11965a159 55575.27107880     9.480        0.031  3.510e+00      null         null       null      null         null       null      null         null       null     1.0     123        0111          0.306820       121.002958 
+         0169p272_ac51-052314  17.4253127  27.9504961   1   0     0000   1 11969a158 55575.40325590     9.361        0.022  2.174e+00     8.995        0.029  2.978e+00      null         null       null      null         null       null     1.0     102        0011          0.306820       121.002958 
