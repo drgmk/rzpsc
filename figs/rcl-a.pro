@@ -1,6 +1,6 @@
 ;; Clump radius vs. a plot
 
-a = logarrw(min=0.05,max=20,n=1e3)
+a = logarrw(min=0.02,max=8,n=1e3)
 tcl = [2,5,12,30]
 ncl = N_ELEMENTS(tcl)
 
@@ -15,21 +15,21 @@ xr = minmax(a)
 yr = [0.5,300]
 plot,[0],[0],xrange=xr,yrange=yr,/xl,/yl,xtitle='Semi-major axis (au)',ytitle='Clump radius (R!dSun!n)',xthick=thk,ythick=thk,charsize=csz,position=[0.13,0.135,0.99,0.99],/yst,/xst;,ytickformat='exponentsonaxis';,xtickformat='exponentsonaxis'
 
+;; HAe/Be
+dr = [0.1,1.]
+polyfill,[dr[0],dr[1],dr[1],dr[0]],[yr[0],yr[0],yr[1],yr[1]],/line_fill,orientation=-45,color=2,thick=thk
+xyouts,.9,0.6,'UXors',charsize=csz,orientation=90
+
 ;; RZ Psc
 dr = [0.3,0.5]
 polyfill,[dr[0],dr[1],dr[1],dr[0]],[yr[0],yr[0],yr[1],yr[1]],/line_fill,orientation=45,color=6,thick=thk
 xyouts,0.43,0.6,'RZ Psc',charsize=csz,orientation=90
 
-;; HAe/Be
-dr = [0.6,1.2]
-polyfill,[dr[0],dr[1],dr[1],dr[0]],[yr[0],yr[0],yr[1],yr[1]],/line_fill,orientation=45,color=2,thick=thk
-xyouts,1.07,0.6,'UXOrs',charsize=csz,orientation=90
-
 ;; something to do with orbit circumference, 213 is a/RSun and 1rad around orbit
 ;oplot,a,a*213.7,thick=thk,color=2 ; clump goes 1 radian
 ;xyouts,0.65,150,'1rad',orientation=34,color=2,charsize=1.4
 
-oplot,a,a*21.37,thick=thk,color=8 ; clump goes a/10
+oplot,a,a*21.37,thick=thk,color=8,linestyle=2 ; clump goes a/10
 xyouts,4,93,'a/10',orientation=34.5,color=8,charsize=1.4
 
 res = float(10)                              ; 11:10 inside and 10:9 outside
@@ -44,7 +44,7 @@ for i=0,ncl-1 do begin
 
    rcl = 1.85*tcl[i]*sqrt(1./a) - 1.
    oplot,a,rcl,thick=thk,color=col[i]
-   xyouts,0.1,1.1*interpol(rcl,a,0.1),STRN(tcl[i])+' days',color=col[i],charsize=1.4,orientation=-21
+   xyouts,0.04,1.2*interpol(rcl,a,0.1),STRN(tcl[i])+' days',color=col[i],charsize=1.4,orientation=-21
    
 endfor
 

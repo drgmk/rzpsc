@@ -116,16 +116,35 @@ restore,'~/astro/doc/rz-psc/sed/RZ-Psc.xdr'
 tmp = WHERE(~STREGEX(phot.band,'_',/BOOLEAN))
 lamflam = phot.flux[tmp] / 1e26 * c / getweffs(phot.band[tmp])       ; convert to W/m^2
 tmp1 = WHERE(phot.band[tmp] eq '2MR2J')
-lamflam *= pk / lamflam[tmp1[0]]
+norm = pk / lamflam[tmp1[0]]
+lamflam *= norm
 wav = getweffs(phot.band[tmp])
-srt = SORT(wav)
-wav = wav[srt]
-lamflam = lamflam[srt]
-ok = WHERE(phot.lim[srt[tmp]] eq 0,complement=lim)
-oplot,wav[tmp[ok]],lamflam[tmp[ok]],thick=thk,color=1                    ; plot W/m^2
+wav_all = [wav,w]
+lamflam_all = [lamflam,lamflam_spec]
+ok = WHERE(phot.lim[tmp] eq 0,complement=lim)
+
+readcol,'../visir-N-spec.txt',w,f,format='f,f'
+tmp2 = WHERE( (w gt 8.2 and w lt 9.37) or (w gt 9.8 and w lt 13.) )
+w = w[tmp2]
+f = f[tmp2]
+f = smooth(f,10)
+wav1 = logarrw(min=min(w),max=max(w),n=10)
+f = interpol(f,w,wav1)
+w = wav1
+lamflam_spec = norm * f / 1e26 * c / w       ; convert to W/m^2
+
+wav_pl = [wav[tmp[ok]],w]
+lamflam_pl = [lamflam[tmp[ok]],lamflam_spec]
+srt = SORT(wav_pl)
+wav_pl = wav_pl[srt]
+lamflam_pl = lamflam_pl[srt]
+
+oplot,wav_pl,lamflam_pl,thick=thk,color=1                    ; plot W/m^2
+
 usersym,[-1,0,1,-1],[1,-1,1,1],fill=1,thick=6 ; downward pointing triangle for limits
 oplot,wav[tmp[lim]],lamflam[tmp[lim]],symsize=1.4,thick=6,col=1,psym=8
-oplotcircw,wav[tmp[ok]],lamflam[tmp[ok]],symsize=1.2,thick=6,/fill,col=1 ; plot W/m^2
+
+oplotcircw,wav_pl,lamflam_pl,symsize=1.2,thick=6,/fill,col=1 ; plot W/m^2
 
 legend,['RZ Psc','GM Aur','HD 166191','HD 113766A'],/bot,/lef,box=0,psym=[8,2,4,1],charsize=csz,charthick=thk,colors=[1,3,2,7],thick=[7,10,6,8],symsize=REPLICATE(1.1,4)
 ;polyfill,color=200,[0.415,0.48,0.48,0.415],[6.25,6.25,8.5,8.5]*1e-15*2.75

@@ -1,0 +1,360 @@
+X December 2016
+
+Dear Editor,
+
+I am pleased to submit an updated version of our manuscript. We are grateful for the
+comments of the referees and have addressed their suggestions in the revised
+version. Individual responses to the comments are noted below.
+
+One referee noted a limitation of the RSOS latex style file is that sub-sections are not
+referenced properly (i.e. 5c is only referenced as c).
+
+regards
+Grant Kennedy
+
+--
+
+Additional changes:
+
+S4a: the shear rate should have been R dOmega/DR, not dVphi/dR. The difference is a
+factor 3 so makes no difference to our conclusions.
+
+Comments to Author:
+
+Reviewers' Comments to Author:
+Reviewer: 1
+
+Comments to the Author(s)
+                Referee report on the RSOS manuscript
+
+            The transiting dust clumps in the evolved disk 
+                    of the Sunlike UXOr RZ Psc
+                           RSOS-160652
+
+
+The manuscript focusses on a very interesting and rare object, RZ Psc. The 
+central question of the study is whether a careful analysis of new long-term 
+optical photometric observations would allow to decide between two competing 
+hypotheses on the physical reason of the eclipses: hydrodynamical turbulence or 
+the passage of asteroidal fragments. The data do not allow to give definite 
+answer, nevertheless the detailed discussions of many aspects of occultations 
+can be considered as a valuable contribution to the literature of this object. 
+
+I like the solid, systematic approach of the authors, accept their new results 
+(mainly on the possible periods of the eclipses) and recommend the paper for 
+publication with very few minor recommendations. 
+
+Comments:
+
+[1] Abstract Sentence 1. Please be a bit more precise: if the occultation is done by
+optically thick dust clumps then the color changes would not follow the extinction
+curve. Do you mean clumps which are optically thick at their centres and less opaque
+outside?
+
+Indeed we do, though the 200 word limit means adding such details would mean removing
+details about the results. Whether the clumps are optically thick or not is relatively
+unimportant for the abstract, so we have instead side-stepped and reworded the sentence
+to "...partially or wholly dimmed...", since the large depth of the dimming events is the
+main point here. 
+
+[2] General: please check the literature: I believe the abbpreviation 'UXor' is more
+commonly used than the form 'UXOr' adopted in this paper.
+
+Yes (in particular Herbst & Shevchenko 1999), thank you. Changed throughout.
+
+[3] Sect. 2 Par 3. The "de Wit et al. picture assumes planetesimals that are
+continually being destroyed. These collisions generate the large collective 
+surface area of small dust that emits strongly in the mid-IR." The authors may 
+want to check mid-infrared monitoring data (e.g. the WISE, NeoWISE and 
+reactivated WISE all-sky surveys, altogether 6 epochs over some 6 years) to 
+look for variability of the mid-IR emission. If it is related to collisions, 
+the emission should go up and down depending on the time lasted since the last 
+big collision. 
+
+There is indeed WISE variability, and even without the epoch data disagreement between
+WISE and a previous AKARI 18um non-detection suggests variability. This variation was in
+fact used to justify VISIR observations and the intention was to that this would be a
+separate study. However, we obtained the VISIR spectrum and Q photometry since submitting
+the manuscript, so have included it and the WISE epoch photometry here. Most of this has
+been incorporated into a revised S3, now split into optical and IR photometry. Since we
+conclude that the IR emission is not dominated by the same dust that causes the dimming
+events, there is no need for the two to be correlated (though the WISE data are not at
+high enough cadence to test this).
+
+[4] Sect. 3, Par 1. I do not see necessary to list all those data sets which 
+were finally not used.
+
+This is included in case others want the data, as some of it had to be digitised 
+by hand and using character recognition software so we think it could at least save
+others the same effort. The other referee was not concerned, so we have shortened the
+description a little but retained the information.
+
+[5] Fig. 1 Caption. Please refer to the main text on how were fluxes calculated from magnitudes.
+
+Note added.
+
+[6] Page 5, top. Please explain which filter, which photometric band was used by the listed telescopes.
+
+Done, and references added.
+
+[7] Fig. 3. Is there any interpretation for the negative peaks? Are they just noise (but below -3 sig)?
+
+Largely these arise because the DACF distribution is non-Gaussian, though there are
+probably a few cases where there are anti-correlated data. The squares provided no real
+information so we have removed them.
+
+[8] Page 11, top. Please give a reference for the statement "pressure effects 
+in a hydrodynamic turbulence scenario might also disperse a clump"
+
+There was no reference for this, just the fact that the sound crossing time for a
+star-sized clump at 1au is less than the orbital period, so a clump caused by pressure
+related effects (i.e. turbulence) could also be dispersed quickly since pressure
+overdensities could re-equilibrate (or at least change). We have made this argument
+clearer in the text.
+
+[9] Eq 4.2. Somehow my feeling is that in the second integral the distance unit is R* (as
+stated also in the text). But then why not to use it in the first integral, why do we
+integrate from -R* to +R*, and not from -1 to +1?
+
+Indeed, the limits in the second integral should be sqrt(R_*^2 - x^2). So the origin of
+equation 4.2 is clear, we used units of R_*.
+
+[10] Sect. 5, Sentence 2. "These clumps can be optically thick,". Would be worth to
+compute how much dust is needed for optical thickness, with some assumption on the
+geometry. If we assume some realistic lifetime of dust particles at this distance from
+the star, can we get a realistic number for the destroyed planetesimals per year,
+assuming typical comet mass?
+
+Given the conclusion that most of the IR excess is not related to the clumps, such a
+calculation would not provide any real link to the expected evolution. Similarly, the
+expected disk lifetime at this brightness (if a debris disk) and the associated
+planetesimal destruction rate doesn't inform the interpretation of the light curve, so we
+have not tried to make such a calculation. The best estimate of the destruction rate in
+terms of what can be said given the light curve is the number of ~30 year from the
+dimming events discussed in section 4ii.
+
+[11] Page 18, Line 43. A typo: "as a an"
+
+Fixed, thank you.
+
+
+Reviewer: 2
+
+Comments to the Author(s)
+This paper is a very thorough and considerate analysis
+of lightcurves for the anomalous variable star RZ Psc, 
+for a long time considered to be an eclipsing UXOr 
+variable. Two scenarios are plausible for the day-long 
+dimmings in this star, inhomegenities in a gas-rich disk,
+or a kind of asteroid belt in a debris disk. While the
+results of this paper remain inconclusive with regards
+to these two scenarios, the paper definitely provides
+new insights and constraints on the occulting bodies, 
+based on an unprecedented decade-long dataset. Among
+others, the paper presents for the first time (?) weak
+evidence for a periodicity. In the final chapters, the
+paper also attempts a unifying explanation for various
+types of young stars affected by disk eclipses and puts
+RZ Psc in the context of the general picture of disk
+evolution, which adds relevance to the paper.
+
+The paper is well written and illustrated, and convincly
+argued throughout. I absolutely recommend publication. 
+All comments that I had while reading the paper are of
+cosmetic nature, mostly minor clarifications. I list these
+comments in detail below. Because these comments do not
+substantially affect the paper, I do not insist on seeing
+it again after the revision.
+
+1. Introduction, 1st paragraph: 'most has accreted and the
+remainder been lost to space' - I would prefer to state this
+more cautiously. We know that accretion and photoevaporation
+play a role (among other processes), but we do not know their
+relative important, so, 'most' is to me a reach.
+
+Fair enough.
+
+2. Introduction, 4th paragraph: Since the entire introduction
+is discussing young stars with some type of disk, I find it
+slightly misleading to quote the paper on Tabby's star (reference
+20), which may or may not have any circumstellar matter.
+
+This paper was being noted as one of the side-effects from transit surveys. Nevertheless,
+this paper will not lack citations so we have removed it.
+
+3. Sect. 2: I suggest to make it clear from the outset
+that the eclipses in RZ Psc could be either an asteroid belt
+or hydrodynamical changes in a gas-rich transition disk. This 
+section seems to express a strong preference the former scenario
+(as does the abstract). Later in the paper it becomes clear
+that both scenarios are still plausible, which causes a little
+confusion in the overall argument of the paper.
+
+Indeed, this probably reflects the way in which this project was approached. We have
+tried to provide a more balanced picture, and introduced the disk status as a major
+question from the outset.
+
+4. Sect. 3, 1st paragraph: I think when using the WASP archive,
+it is worth citing Butters et al. 2010. 
+
+Indeed, done.
+
+5. Sect. 4a, i, 2nd paragraph: Since 'swamped' is not a technical
+term, it might be useful to explain precisely what is meant here.
+
+This was the aim of the words following swamped, we have reworded it.
+
+6. Sect. 4a, ii, 5th paragraph: 'distributed between 1 and 4 days'
+-- I suggest to add 'comparable to the observed duration of the
+events (if that is indeed the case).
+
+Yes, done.
+
+7. Figure 3: the histogram in the top panel needs labels on the y-axis.
+The DACF plots would benefit from making the squares larger.
+
+We added the y-axis labels. We removed the squares as they are not particularly useful
+(e.g the DACF distributions are non-Gaussian).
+
+8. Sect. 4a, ii: The simulations illustrated in Fig. 4 are quite nice.
+I have the impression the authors understate the evidence for a ~65d
+period slightly, but that's not for me to decide. I'm confused though
+about the statement in the last paragraph 'an event occurs about once
+every 13 days' - how is that possible with a periodicity of 65 days?
+(And could the tentative 10 day period be the rotation period of the star?)
+
+Indeed, we are likely being conservative on the period. The 13d is possible because more
+than one set of repeating events can be going on at a time. We have clarified this in the
+text. The 10d peak is probably not rotation, as the event finding should not be finding
+sinusoidal (or similar) signals in the data. We have not seen strong evidence for a
+rotation signature.
+
+(At the end of Sect. 4a, iii, the reader is for the first time
+again reminded that the asteroid belt scenario is not the only
+game in town, which is mildly confusing - see my point 3.)
+
+See above.
+
+8. Sect. 4b, i: Some of the equations in the model descriptions 
+probably warrant a bit more commentary, for example, the double
+integral in equ 4.2 and the scaling factors in equ 4.6 and 4.7. 
+
+We have added a sentence on the meaning of the integrals. The scaling factors arise from
+the choice of units du/dt and df/dt. We have said explicitly that when these units are
+used the numbers can be plugged into equations 4.6 and 4.7.
+
+9. Sect. 4b, ii, 1st paragraph: It might be worth adding that 
+this application only makes sense because in most cases one night
+of data only covers ingress OR egress, not both.
+
+Yes, done.
+
+10. Figure 6: It seems to me that the line described in the text
+as 'brown' is in fact 'green'.
+
+Thank you. The first author is partially colour blind, and this was a guess not checked
+with/by co-authors...
+
+11. Penultimate paragraph in Sect 4b: 'distribution in section (c)'
+- I assume this is 5c?
+
+Yes, this appears to be a limitation of the RSOS style. This has been noted in the hope
+that it will be fixed during publication.
+
+(At the end of Sect 4 the reader hears again about the potential
+of a significant gas reservoir - again it might have been useful
+to introduce this earlier, see comment 3.)
+
+See above.
+
+12. Very beginning of Sect 5: 'star-sized clumps of dust' - Here I
+was confused, because the curtain-model was operating under the
+assumption that the clumps are much larger than the star, at least
+in y-direction, or not?
+
+This is indeed the assumption of the model, and there is a note that hints that this is
+not always the case after equation 4.5. However, we have made this point more explicit,,
+noting that a variety of clump sizes probably exists where the curtain model is
+introduced. For our purposes here (i.e. mainly the conversion from Fig 7 to Fig 8, which
+includes some very deep events where the clumps must be close to star sized or larger) we
+consider the model sufficient.
+
+13. Sect. 5a, 2rd paragraph: I was wondering if it is possible to 
+state more firmly how little extinction is seen along the line of
+sight. The authors quote constraints between 0 and a few percent.
+With known spectral type and colour, can this be done more precisely?
+
+Better limits on extinction would be difficult, since it requires both a precise
+knowledge of the expected stellar spectrum and very precise photometry. Getting either of
+these, at better than the percent level is hard. In particular 1% photometry is about the
+limit for quiet stars, so doing better for one that varies so much would be difficult.
+
+14. Sect. 5b: Again I would appreciate a little more commentary on
+equation 5.2, for readers who do not immediately see where the scaling
+law is coming from.
+
+We have added a sentence noting that it comes from solving the one that precedes it in
+the text, and clarified the units of the terms.
+
+15. Figure 7: I do not understand why the UXOrs are assumed to have
+occulting bodies near 1 AU.
+
+This was based on the inner edge of a "typical" Herbig Ae/Be (commonly said in the
+literature to be ~0.5-1au) and the idea of Dullemond+03 that the UXors are self-shadowed
+disks where the occulting material is at the inner disk edge. Looking deeper into this,
+sizes measured for inner disks in the near-IR cover a wider range so we have updated the
+figure and associated text to reflect this.
+
+16. Sect. 5d, 1st paragraph: 'includes many Sun like stars' - I suggest
+saying 'young Sun like stars' here, to be clear.
+
+Done.
+
+17. Figure 8: The authors make a comment on possible variability between
+the AKARI and WISE datapoint. But the WISE archive also provides information
+on variability. There may also be NEOWISE data on this star. I mention
+this because variability in the mid-infrared could be an additional
+clue on the nature of the dimmings.
+
+Indeed, see response to similar comment from the first referee above.
+
+18. Again Figure 8: Looking at this figure, the distinction between
+debris and transition disks seems dubious to me. On what basis is
+HD113766A classified as debris disk? One aspect here is that these
+are stars with very different spectral types and therefore very different
+irradiation of the disk. To make the comparison fairer, it might be 
+wise to scale the SEDs with the flux at 1mu. That might show that
+the two potential debris disks have lower disk luminosities than GM Aur.
+Just as a sidenote, classical accretion disks show a wide range of SED 
+properties, and particularly transition disks are very diverse. The SED 
+of RZ Psc reminds me of the depleted transition disks where dust settling 
+and clearing have both occured (see for example the samples in Rodgers-Lee
+et al. 2014). I do agree that RZ Psc might be an interesting case
+between late primordial disks and debris disks.
+
+The main distinction has been based on age, but also includes considerations such as
+mid-IR gas signatures and dust compositions derived from mid-IR spectra. Indeed
+HD113766's SED may be ambiguous, and this was in fact noted in a previous paper
+(Kennedy+2014), and is now noted here.
+
+Indeed GM Aur is a later type star at K5, and HD 113766 is ~F4, so the range of
+fractional luminosities (L_IR/Lstar) is larger than might be surmised from Fig 8, though
+in fact HD113766 is a few percent, which is still very large and only a factor of a few
+different to HD166191 and RZ Psc. We have discussed these differences in the text rather
+than modify the plot because it would be hard to shift the SEDs in a way that reflects
+these differences.
+
+19. Figure 9: I absolutely appreciate the cartoon figure to illustrate
+the origins of disk eclipses. The only issue I have is the depiction
+of the disk in low-mass and Sun-like stars. My understanding is that
+even in these objects the inner rim of the disk is not smooth, but
+has a wall-like feature (just closer to the star, in comparison with
+Herbig Ae/Be stars), maybe even more pronounced in transition disks
+(see for example the PPVI review by Espaillat). It might be good to 
+stress that the depiction is very simplified. (Another point one might
+raise: The cartoon seems to imply that the magnetic axis is always
+inclined with respect to the rotational axis.)
+
+We have updated the figure slightly to include a clearer inner edge for the low mass and
+Sun-like stars, as well as added some text emphasising that Fig 9 is indeed simplified,
+and that the stellar magnetic field need not be tilted.

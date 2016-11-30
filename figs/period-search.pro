@@ -14,11 +14,13 @@ set_plot,'ps'
 csz = 1.5
 thk = 8
 thk1 = 7
+sqsz = 0.05
+sqsig = 3
 fn = 'auto.eps'
 device,file=fn,/enc,/col,xsize=7,ysize=13,/inches,/times
 xr = [10,155]
 yrng = [0,560]
-plot,[0],[0],xrange=xr,yrange=yrng,xthick=thk,ythick=thk,charsize=csz,/xst,/yst,xtitle='Lag (days)',ytitle='DACF power + offset',position=[0.1,0.06,0.99,0.95],xticklen=0.01,ytickname=REPLICATE(' ',60)
+plot,[0],[0],xrange=xr,yrange=yrng,xthick=thk,ythick=thk,charsize=csz,/xst,/yst,xtitle='Lag (days)',ytitle='DACF power + offset',position=[0.1,0.06,0.94,0.95],xticklen=0.01,ytickname=REPLICATE(' ',60)
 
 ;; polyfill,[65,65,80,80],[yrng[0],yrng[1],yrng[1],yrng[0]],color=230,thick=2;,orientation=90,/LINE_FILL
 axis,xaxis=1,xrange=xr,/xst,charsize=csz,xthick=thk,xticklen=0.01,xtitle='Lag (days)'
@@ -43,22 +45,22 @@ f1 = f1[tmp]
 ;oplot,lagold,corold+190
 
 ;; all data
-dcf,t1,f1,t1,f1,lag3,cor3,minlag=xr[0],maxlag=xr[1],minpt=minpt,numf=2*ROUND(MAX(t1)-MIN(t1))
+;dcf,t1,f1,t1,f1,lag3,cor3,minlag=xr[0],maxlag=xr[1],minpt=minpt,numf=2*ROUND(MAX(t1)-MIN(t1))
 ok = WHERE(FINITE(cor3))
 oplot,lag3[ok],cor3[ok]+410,thick=thk1
 meanclip,cor3[ok],mn,sd
-tmp = WHERE(cor3[ok] gt 3*sd or cor3[ok] lt -3*sd)
-oplot,lag3[ok[tmp]],cor3[ok[tmp]]+410,psym=6,symsize=0.4,thick=thk1
+tmp = WHERE(cor3[ok] gt sqsig*sd or cor3[ok] lt -sqsig*sd)
+oplot,lag3[ok[tmp]],cor3[ok[tmp]]+410,psym=6,symsize=sqsz,thick=thk1
 xyouts,15,425,'All data',charsize=1.2,alignment=0
 
 ;; excluding 2004/6 data
-getyeardata,t1,f1,[2006],t456,f456,tout,fout
-dcf,tout,fout,tout,fout,lag4,cor4,minlag=xr[0],maxlag=xr[1],minpt=minpt,numf=2*ROUND(MAX(t1)-MIN(t1))
+;getyeardata,t1,f1,[2006],t456,f456,tout,fout
+;dcf,tout,fout,tout,fout,lag4,cor4,minlag=xr[0],maxlag=xr[1],minpt=minpt,numf=2*ROUND(MAX(t1)-MIN(t1))
 ok = WHERE(FINITE(cor4))
 oplot,lag4[ok],cor4[ok]+380,thick=thk1
 meanclip,cor4[ok],mn,sd
-tmp = WHERE(cor4[ok] gt 3*sd or cor4[ok] lt -3*sd)
-oplot,lag4[ok[tmp]],cor4[ok[tmp]]+380,psym=6,symsize=0.4,thick=thk1
+tmp = WHERE(cor4[ok] gt sqsig*sd or cor4[ok] lt -sqsig*sd)
+oplot,lag4[ok[tmp]],cor4[ok[tmp]]+380,psym=6,symsize=sqsz,thick=thk1
 xyouts,15,385,'excluding 2006',charsize=1.2,alignment=0
 
 ;; data on a yearly basis
@@ -90,8 +92,8 @@ for i=0,2015-yr0 do begin
    if MAX(cor,/NAN) gt 4*sd or nok gt 100 then begin
       yoff += (mx - MIN(cor,/NAN) + 5) > 5.
       oplot,lag[ok],cor[ok]+yoff,color=col,thick=thk1
-      tmp = WHERE(cor[ok] gt 3*sd or cor[ok] lt -3*sd,ntmp)
-      if tmp[0] ne -1 then oplot,lag[ok[tmp]],cor[ok[tmp]]+yoff,psym=6,color=col,symsize=0.4,thick=thk1
+      tmp = WHERE(cor[ok] gt sqsig*sd or cor[ok] lt -sqsig*sd,ntmp)
+      if tmp[0] ne -1 then oplot,lag[ok[tmp]],cor[ok[tmp]]+yoff,psym=6,color=col,symsize=sqsz,thick=thk1
       xyouts,15,yoff+3,STRN(yr),color=col,charsize=1.3;,alignment=1
       mx = MAX(cor,/NAN)
       j++
@@ -121,8 +123,11 @@ endfor
 binc = (binl[0:-2]+binl[1:-1])/2.
 yoff += (mx - MIN(bin) + 0.1) > 3.
 oplot,binc,4*bin+520,psym=10,thick=thk,color=1
-oplot,binl,FLTARR(nb+1)+520,linestyle=2,thick=thk,color=1
-xyouts,15,539,'Yearly peak counting',charsize=1.2,color=1
+oplot,xr,FLTARR(nb+1)+520,linestyle=2,thick=thk,color=1
+xyouts,100,543,'Yearly peak counting',charsize=1.2,color=1
+xyouts,157,517,'0',charsize=csz,color=1
+xyouts,157,537,'5',charsize=csz,color=1
+xyouts,156,557,'10',charsize=csz,color=1
 
 device,/close
 set_plot,'x'
