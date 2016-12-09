@@ -109,23 +109,28 @@ are usually Herbig Ae and late-type Herbig Be stars \cite{1984A&AS...55..109F}, 
 typically show several magnitudes of extinction that is generally attributed to variable
 obscuration by circumstellar dust
 \cite{1994AJ....108.1906H,1999AJ....118.1043H,2000A&A...364..633N}.\footnote{Not all
-  stars occulted by dust are UXors. Two main classes are: those occulted by circumstellar
-  material beyond $\gtrsim$10au, such as AA~Tau and V409~Tau which show
+  stars occulted by dust are UXors. Two other classes are: those occulted by
+  circumstellar material beyond $\gtrsim$10au, such as AA~Tau and V409~Tau which show
   $\gtrsim$year-long dimming events \cite{2013A&A...557A..77B,2015AJ....150...32R}, and
   systems such as $\epsilon$~Aur, J1407, EE~Cep, and OGLE-LMC-ECL-11893 where the
   occultations are attributed to circumsecondary disks
   (e.g. \cite{1999MNRAS.303..521M,2012AJ....143...72M,2014ApJ...788...41D,2015ApJS..220...14K}).}
-Two key arguments that favour circumstellar dust as the cause are i) ``blueing'', where
-the star is reddened when moderately dimmed but returns to the stellar colour for very
-deep ($\gtrsim$1mag) events -- the remaining flux is interpreted as light scattered off
-circumstellar dust \cite{1988SvAL...14...27G}, and ii) increased polarisation fraction
-during dimming events, caused by a greater fraction of the flux being contributed by
-dust-scattered light (e.g. \cite{2001ARep...45...51R}, which also shows that the
-surrounding dust does not reside in a spherical shell). UXors therefore reveal
-information on the degree of non-axisymmetry, the ``clumpiness'', of dust orbiting a star
-on spatial scales similar to the star itself. The observations can span multiple orbits
-to test for repeated dimming events (e.g. \cite{1999A&A...349..619B}), and by using
-different bandpasses and polarisation can estimate dust grain sizes
+Three related arguments that favour circumstellar dust as the cause are i) a maximum
+depth of dimming events of roughly 3 magnitudes, suggesting that a few percent of the
+visible flux is not directly from the star, but scattered off a disk that surrounds the
+star and remains visible even when the star itself is completely occulted, ii)
+``blueing'', where the star is reddened for small ($\lesssim$1mag) levels of dimming but
+returns to the stellar colour (i.e. becomes ``bluer'') for the very deep ($\gtrsim$1mag)
+events where the star is mostly occulted -- the reddening indicates dimming by
+circumstellar dust, and a stellar colour is typical of light scattered off circumstellar
+dust \cite{1988SvAL...14...27G}, and iii) increased polarisation fraction during dimming
+events, caused by a greater fraction of the flux being contributed by dust-scattered
+light (e.g. \cite{2001ARep...45...51R}, which also shows that the surrounding dust does
+not reside in a spherical shell). UXors therefore reveal information on the degree of
+non-axisymmetry, the ``clumpiness'', of dust orbiting a star on spatial scales similar to
+the star itself. The observations can span multiple orbits to test for repeated dimming
+events (e.g. \cite{1999A&A...349..619B}), and by using different bandpasses and
+polarisation can estimate dust grain sizes
 (e.g. \cite{1988SvAL...14...27G,1994ASPC...62...63G}).
 
 In the majority of UXor-like cases (i.e. those related to obscuration by dust), including
@@ -205,12 +210,13 @@ systems like HD~21997, that appear to be a few tens of Myr old and host gas-rich
 status. Thus, a considerable part of our analysis focuses on the question of the status
 of the disk around RZ~Psc.
 
-Given an interpretation related to individual planetesimal disruptions, rather than
-hydrodynamics, it is perhaps surprising that to date the dimming events are not seen to
-be periodic \cite{1999AstL...25..243R,2013A&A...553L...1D}. The only cyclical variation
-seen in light curves for RZ~Psc is a 12.4 year variation with an amplitude of 0.5 mag,
-which is attributed to either a magnetic cycle, or precession of an otherwise unseen
-outer disk due to perturbations from an unseen companion \cite{2013A&A...553L...1D}.
+Given the proposed interpretation related to individual planetesimal disruptions, rather
+than hydrodynamics, it is perhaps surprising that to date the dimming events are not seen
+to be periodic \cite{1999AstL...25..243R,2013A&A...553L...1D}. The only cyclical
+variation seen in light curves for RZ~Psc is a 12.4 year variation with an amplitude of
+0.5 mag, which is attributed to either a magnetic cycle, or precession of an otherwise
+unseen outer disk due to perturbations from an unseen companion
+\cite{2013A&A...553L...1D}.
 
 \section{Time series photometry}\label{s:data}
 
@@ -235,7 +241,7 @@ observations of RZ~Psc from a wide variety of other sources
 the Catalina Sky Survey, the American Association of Variable Star Observers, the All-Sky
 Automated Survey). Aside from the Harvard plate photometry published by G\"urtler et
 al. \cite{1999A&AS..140..293G} we have not sought unpublished photometry so the light
-curve remains incomplete.\footnote{Normalised photometry is available at
+curve remains incomplete.\footnote{All normalised photometry is available at
   \href{https://github.com/drgmk/rzpsc}{https://github.com/drgmk/rzpsc}}
 
 Here we focus on the WASP and KELT-North data, as it has not been previously analysed and
@@ -345,17 +351,21 @@ Motivated by this variation, we obtained VLT/VISIR observations of RZ~Psc; an N-
 reduced using the standard ESO \texttt{esorex} pipeline. The wall-clock integration time
 for the spectrum was 50 minutes at an airmass of 1.66, and was calibrated using an
 observation of HD~189831 taken immediately afterwards at an airmass of 1.63. The spectra
-in individual chop/nod cycles are consistent, suggesting that the absolute calibration is
-reliable. The spectrum was trimmed to mask highly uncertain regions shortward of 8$\mu$m,
-and longward of 13 $\mu$m, and near the telluric absorption at 9.5$\mu$m. The Q-band
-photometry took 45 minutes at an airmass of 1.65-1.7, and was calibrated against an
-observation of HD~2436 taken immediately afterwards at an airmass of 1.5. Photometry of
-RZ~Psc and HD~2436 was done using a 0.9'' radius aperture and a sky annulus from
-1-2''. In addition to the conversion from adu/s to Jansky using HD~2436, we applied an
-additional upward correction to account for the slightly lower airmass for the calibrator
+in individual chop/nod cycles are consistent so the shape of the spectrum is
+reliable. The absolute calibration is uncertain at $\sim$10\% levels
+\cite{2007A&A...476..279G}, which is sufficiently precise for our purposes here. The
+spectrum was trimmed to mask highly uncertain regions shortward of 8$\mu$m, and longward
+of 13 $\mu$m, and near the telluric absorption at 9.5$\mu$m. The Q-band photometry took
+45 minutes at an airmass of 1.65-1.7, and was calibrated against an observation of
+HD~2436 taken immediately afterwards at an airmass of 1.5. Photometry of RZ~Psc and
+HD~2436 was done using a 0.9'' radius aperture and a sky annulus from 1-2''. In addition
+to the conversion from adu/s to Jansky using HD~2436, we applied an additional upward
+correction to account for the slightly lower airmass for the calibrator
 ($\exp(0.3 [1.675-1.5] \approx 1.05$, where an extinction of 0.3 per unit airmass was
-assumed). Uncertainties were estimated as the standard deviation of the flux density in
-50 apertures around RZ~Psc. The final calibrated flux is $86 \pm 10$ mJy.
+used, derived from archival calibration data using a method similar to that of Verhoeff
+et al. \cite{2012A&A...538A.101V}). Uncertainties were estimated as the standard
+deviation of the flux density in 50 apertures around RZ~Psc. The final calibrated flux is
+$86 \pm 10$ mJy.
 
 The VISIR spectrum and photometry are shown in Figure \ref{fig:sed}, which also shows the
 other available near- to far-IR photometry. The absolute level of the spectrum agrees
@@ -409,7 +419,7 @@ not exactly 1 because the total flux is not dominated by the disk near 3-5$\mu$m
 hence the slopes are slightly flatter. Comparing the observed and expected correlations,
 we conclude that the data do not show significant evidence for changes in the spectral
 shape (i.e. changing temperature or composition). However, the ratios including 12 and
-22$\mu$m observations are most sensitive to these change, but only include the first two
+22$\mu$m observations are most sensitive to these changes, but only include the first two
 sets of observations where the brightness changes were relatively small.
 
 Nevertheless, the amplitude of the change in 3.4$\mu$m brightness over 5 years is about
@@ -455,15 +465,15 @@ self-gravity are expected to have a short lifetime at optical depths that are la
 enough to cause detectable dimming events, but could cause repeated dimming events if
 they are initially optically thick.
 
-The coverage in an individual season is 100-150 days. Thus, if the occulting material
-resides in an asteroid belt closer than $\sim$0.5au, periodicity in the dimming events
-may be visible in a single season's data. Longer orbital periods may be visible across
-seasons, though the six-month gap between seasons makes unambiguously linking events
-harder. Non-detection of periodicity would imply that the data are not sufficient, or
-that strict periodicity does not exist. An intermediate possibility is that occultations
-happen with a range of periodicities, perhaps reflecting their origin in a radially broad
-region, and that discerning this scenario from randomly occurring occultations is not
-possible given the data.
+The temporal coverage of the observations in an individual season is 100-150 days. Thus,
+if the occulting material resides in an asteroid belt closer than $\sim$0.5au,
+periodicity in the dimming events may be visible in a single season's data. Longer
+orbital periods may be visible across seasons, though the six-month gap between seasons
+makes unambiguously linking events harder. Non-detection of periodicity would imply that
+the data are not sufficient, or that strict periodicity does not exist. An intermediate
+possibility is that occultations happen with a range of periodicities, perhaps reflecting
+their origin in a radially broad region, and that discerning this scenario from randomly
+occurring occultations is not possible given the data.
 
 In an attempt to find the expected periodicity we tried several approaches. These are
 similar in that they aim to quantify whether some feature in the light curve is repeated
@@ -492,11 +502,11 @@ Fourier transforms (e.g. periodograms). The motivation being that an individual 
 event may be followed by another some number of days later, and perhaps repeat a few
 times, but other similarly (but not exactly) separated events may happen years later or
 earlier with a phase that is totally different. We therefore used the discrete
-autocorrelation function (DACF) proposed by \cite{1988ApJ...333..646E}, though do not
-include uncertainties on individual measurements. For a time series with measurements
-$a_i$ at times $t_i$ the DACF first computes the mean $\bar{a}$ from the light curve,
-here we used the sigma-clipped mean to remove the dimming events. Then for each pair of
-points $a_i$, $a_j$ (with $i\ne j$) computes
+autocorrelation function (DACF) proposed by Edelson \& Krolik \cite{1988ApJ...333..646E},
+though do not include uncertainties on individual measurements. For a time series with
+measurements $a_i$ at times $t_i$ the DACF first computes the mean $\bar{a}$ from the
+light curve, here we used the sigma-clipped mean to remove the dimming events. Then for
+each pair of points $a_i$, $a_j$ (with $i\ne j$) computes
 $U_{ij}=((a_i-\bar{a})(a_j-\bar{a}) / \sigma_a$, with each $U_{ij}$ associated with a
 time lag $\Delta t_{ij}=t_j - t_i$. A series of time lags centered at times $t_{\rm lag}$
 with width $\Delta t_{\rm lag}$ are then used as bins, and the average in each bin is the
@@ -573,7 +583,7 @@ that shows a measure of the power present at a given time difference.
 % the stacked set of periods shown; allowing each period range plotted to be transparent
 % means that the density gives an indication of the power at each period.
 
-The solid lines in Figure \ref{fig:hist} shows this power in histogram form (the same in
+The solid lines in Figure \ref{fig:hist} show this power in histogram form (the same in
 each panel), generated from 60 events that were identified in the light curve. The y-axis
 should be interpreted as the number of events that are consistent with that period on the
 x-axis. As before, there is evidence for a peak, now slightly shifted to near 65 days. In
@@ -581,7 +591,7 @@ contrast to the DACF analysis, this power does not all arise from a single year.
 contributed by 2004 and 2009, but exclusion of events from these years results in a
 similar (but noisier) histogram.
 
-To test what could have been detected, and the quantify the variation in power expected,
+To test what could have been detected, and quantify the variation in power expected,
 we created synthetic light curves with the same temporal sampling as the WASP and
 KELT-North data. To do this we set the flux to 1, and randomly injected a number of
 dimming events with a flux of 0.1. These events are therefore relatively easy for the
@@ -803,7 +813,7 @@ $f_{\rm min}$ in Figure \ref{fig:grad}. We plot gradients whose uncertainty is l
 4$\times$ their value as open circles, with symbol sizes proportional to the inverse of
 this uncertainty. All other gradients are plotted as small dots, as a check that the
 gradients for unocculted fluxes are near zero. The horizontal scatter of these gradients
-near $f_{\rm min}=0$ provides a further estimate of the uncertainty of individual
+near $f_{\rm min}=1$ provides a further estimate of the uncertainty of individual
 gradients. The solid lines show the gradients expected for circular orbits at a range of
 semi-major axes.
 
@@ -863,41 +873,38 @@ star.
 In Figure \ref{fig:sma} we have converted the gradients into semi-major axes using
 equation (\ref{eq:acl}). The dashed line shows the stellar radius, estimated to be
 approximately Solar based on an age of 25Myr \cite{2013AstL...39..776P} and an effective
-temperature of 5350K \cite{2014A&A...563A.139P} using Siess \cite{2000A&A...358..593S}
-isochrones. This Figure also includes solid lines of constant gradient, computed using
-equation (\ref{eq:acl}) and $f_{\rm min} = 1-\tau$.
+temperature of 5350K \cite{2014A&A...563A.139P} using Siess et
+al. \cite{2000A&A...358..593S} isochrones. This Figure also includes solid lines of
+constant gradient, computed using equation (\ref{eq:acl}) and $f_{\rm min} = 1-\tau$.
 
 The blue line shows the semi-major axis implied by the scatter in gradients near
-$f_{\rm min}=0$ in Figure \ref{fig:grad}. Above this line the gradients can be considered
+$f_{\rm min}=1$ in Figure \ref{fig:grad}. Above this line the gradients can be considered
 consistent with zero, and the inferred semi-major axes largely meaningless. A related
-point is that because the points near $f_{\rm min}=0$ have very small $\tau$, the derived
+point is that because the points near $f_{\rm min}=1$ have very small $\tau$, the derived
 velocities and semi-major axes can be rather extreme and should be disregarded. An
 additional issue is highlighted by the two large circles near $f_{\rm min}=0.5$ and
-between $a_{\rm circ}=30$ to 100, which are the first two nights of 2006 observations
+between $a_{\rm circ}=30$ to 100 au, which are the first two nights of 2006 observations
 shown in Figure \ref{fig:waspkeltzoom}. The first is at the time of minimum flux, and the
 other also appears to be at a turning point, so the assumption behind equation
 (\ref{eq:acl}) that $u=0$ (i.e. the cloud edge is passing the stellar disk center) is
 clearly incorrect. These points should therefore be associated not with clumps at 30 to
-100au, with clumps that lie somewhere interior.
+100au, but with clumps that lie somewhere interior.
 
 The green line shows the semi-major axis implied by a gradient of 1/day. As the lowest
 flux measured on a given night is not necessarily the minimum flux for that dimming
 event, the inferred semi-major axis could be greater; in this case points move downward
-parallel to this and similar lines. Thus, the main constraint offered by Figure
-\ref{fig:sma} is that the clumps orbit with semi-major axes less than 10au.
-
-Figure \ref{fig:sma} suggests that the clumps orbit with projected velocities that are
-consistent with circular orbits at about 1au. The conclusion from the IR excess, and
-possibly the periodicity analysis, is that they may lie closer, near
-0.3-0.7au. Reconciling these differences requires that the clumps are on eccentric
-obits. For a semi-major axis of 0.3au the minimum clump eccentricity (i.e. all clumps
-transit at apocenter) is about 0.6. Such an orientation is of course highly unlikely, so
-either the semi-major axis is larger, or the true eccentricities need to be
-higher. Perhaps coincidentally, an eccentricity of 0.6 yields a pericenter velocity of
-120km s$^{-1}$, similar to the velocity shifts in Sodium absorption lines seen towards
-RZ~Psc, which are discussed further in section \ref{s:disk}\ref{ss:orig} (noting however
-that the pericenter velocity is tangential, and the absorption lines show projected
-radial velocity \cite{2013Ap.....56..453P}).
+parallel to this and similar lines. Figure \ref{fig:sma} suggests that the clumps orbit
+with projected velocities that are consistent with circular orbits at or beyond about
+1au. The conclusion from the IR excess, and possibly the periodicity analysis, is that
+they may lie closer, near 0.3-0.7au. Reconciling these differences requires that the
+clumps are on eccentric obits. For a semi-major axis of 0.3au the minimum clump
+eccentricity (i.e. all clumps transit at apocenter) is about 0.6. Such an orientation is
+of course highly unlikely, so either the semi-major axis is larger, or the true
+eccentricities need to be higher. Perhaps coincidentally, an eccentricity of 0.6 yields a
+pericenter velocity of 120km s$^{-1}$, similar to the velocity shifts in Sodium
+absorption lines seen towards RZ~Psc, which are discussed further in section
+\ref{s:disk}\ref{ss:orig} (noting however that the pericenter velocity is tangential, and
+the absorption lines show projected radial velocity \cite{2013Ap.....56..453P}).
 
 \subsection{Summary of light curve analysis}\label{ss:wheresum}
 
@@ -915,7 +922,7 @@ being created by planetesimal collisions within an asteroid belt analogue.
 
 The primary uncertainty lies with the disk evolutionary state. If a significant gas
 reservoir remains, a turbulent inner rim scenario similar to that proposed for UXors
-could produce a similar light curve. Both the lack of accretion, and a likely age beyond
+might produce a similar light curve. Both the lack of accretion, and a likely age beyond
 which gas-rich disks are typically seen, may argue against this scenario, though the disk
 may be in transition to the debris phase and retain some primordial gas. We revisit the
 disk status from the perspective of the flux distribution in section
@@ -942,10 +949,10 @@ out the alternative of an UXor-like hydrodynamic inner rim scenario.
 
 We now address several open questions, each taking a slightly wider view. Primary among
 these is whether the dimming events and the IR excess are caused by the same dust, as
-suggested by \cite{2013A&A...553L...1D}. Two further aspects are then the implications
-for the origin of the clumps and the evolutionary status of the disk in which they
-reside. We finish by considering the proposed scenarios for dippers and UXors, and why
-RZ~Psc appears to be a rare object that lies between these classes.
+suggested by de Wit et al. \cite{2013A&A...553L...1D}. Two further aspects are then the
+implications for the origin of the clumps and the evolutionary status of the disk in
+which they reside. We finish by considering the proposed scenarios for dippers and UXors,
+and why RZ~Psc appears to be a rare object that lies between these classes.
 
 \subsection{Does the occulting dust account for the IR excess?}\label{ss:ir}
 
@@ -990,12 +997,12 @@ the fraction of the sky covered as seen from the star. The dust belt must theref
 an opening angle of at least 8$^\circ$ to capture 7\% of the starlight. However, for this
 minimal estimate the dust is optically thick, yet RZ~Psc is not seen to be reddened. If
 we instead require $\tau \sim \bar{E}$ then as stated in the previous paragraph the dust
-distribution must instead be near isotropic. Given the ubiquity of disk like structures
+distribution must instead be near isotropic. Given the ubiquity of disk-like structures
 around young stars, such a spherical distribution seems physically unlikely. In addition,
 the increased polarisation during deep dimming events argues against a spherical
 distribution.
 
-Thus, the picture of RZ~Psc as a star seen through a \emph{disk}, where the clumps
+Thus, the picture of RZ~Psc as a star seen \emph{through} a disk, where the clumps
 account for all of the dust and sample some representative part of an asteroid belt
 (e.g. the midplane), is untenable because that belt would cause much more reddening than
 is observed. These characteristics distinguish RZ~Psc from heavily reddened objects,
@@ -1006,15 +1013,15 @@ physically plausible.
 
 A more likely alternative, which we favour, is that most of the dust does not lie on
 orbits that pass in front of the star, and the occultations are caused by a small
-fraction of objects that have greater orbital inclinations than average. In this case the
-component that causes most of the IR excess may or may not be clumpy, and could be
-radially optically thick (i.e. the opening angle could be as small as 8$^\circ$). This
-picture unfortunately loses any strong connection between the occulting clumps and the IR
-excess, essentially adding a free parameter that is the fraction of material that is
-``kicked'' or resides above the disk, but seems to be the simplest and most probable
-scenario. Dullemond et al (2003) used essentially the same argument for UXors
-\cite{2003ApJ...594L..47D}, so our picture is therefore inevitably similar to dust
-occultation models proposed for UXors
+fraction of objects that have higher vertical locations (or greater orbital inclinations)
+than average. In this case the component that causes most of the IR excess may or may not
+be clumpy, and could be radially optically thick (i.e. the opening angle could be as
+small as 8$^\circ$). This picture unfortunately loses any strong connection between the
+occulting clumps and the IR excess, essentially adding a free parameter that is the
+fraction of material that is ``kicked'' or resides above the disk, but seems to be the
+simplest and most probable scenario. Dullemond et al. \cite{2003ApJ...594L..47D} used
+essentially the same argument for UXors, so our picture is therefore inevitably similar
+to dust occultation models proposed for UXors
 (e.g. \cite{1997ApJ...491..885N,2000A&A...364..633N,2003ApJ...594L..47D}).  As the disk
 is probably radially optically thick with a scale height similar to gas-rich
 protoplanetary disks, it could be that the scenario for RZ~Psc is in fact the same as
@@ -1023,10 +1030,9 @@ more extended disk, which is not detected at longer wavelengths for reasons disc
 below.
 
 We therefore conclude that while there is almost certainly some connection between the
-dimming events and the IR excess, it is at best indirect; we are (unfortunately) not
-viewing RZ~Psc through a representative part of an asteroid belt analogue. As with other
-UXors, a clear prediction is that the disk is not seen edge-on, but at an intermediate
-inclination.
+dimming events and the IR excess, it is at best indirect; we are not viewing RZ~Psc
+through a representative part of an asteroid belt analogue. As with other UXors, a clear
+prediction is that the disk is not seen edge-on, but at an intermediate inclination.
 
 \subsection{Origin of the occulting structures}\label{ss:orig}
 
@@ -1097,8 +1103,7 @@ $\sim$1500K sublimation temperature. That is, if the origin of RZ~Psc's variabil
 interpreted as similar to other UXors and originates in a gas-rich disk, it must host a
 transition disk rather than a ``full'' primordial disk. Therefore, while these
 comparisons show RZ~Psc to be unusual compared to typical UXors, they do not argue
-strongly for or against a specific scenario. We discuss the evolutionary state of the
-disk further below.
+strongly for or against a specific scenario.
 
 A final aspect to discuss regarding the origin of the clumps, and their relation to the
 IR excess, is the transient absorption features. These are seen towards UXors, but also
@@ -1115,37 +1120,51 @@ asteroid belt and are thus more refractory than the exocomets seen towards other
 tail). Such a scenario is also consistent with the conclusion of section \ref{s:where}
 that the occulting clumps could be on eccentric orbits with high velocities at
 periastron. Models of such low-periastron asteroids or comets invariably require a
-perturbing planet (e.g. \cite{1990A&A...236..202B,1996Icar..120..358B}), which for RZ~Psc
-would orbit about 2.5 times more distant than the source. That is, if the asteroid belt
-is at 0.3au, the planet is near 0.75au. It may be possible that this planet is inclined
-and causes the asteroid belt to precess, thus causing the 12.4 year modulation of the
-stellar flux seen by \cite{2013A&A...553L...1D}.
+perturbing planet (e.g. \cite{1990A&A...236..202B,1996Icar..120..358B}). Assuming the
+same 4:1 mean-motion resonance picture of Beust \& Morbidelli \cite{1996Icar..120..358B}
+implies a planet about 2.5 times more distant than the source. That is, if the asteroid
+belt is at 0.3au, the planet is near 0.75au. It may be possible that this planet is
+inclined and causes the asteroid belt to precess, thus causing the 12.4 year modulation
+of the stellar flux seen by \cite{2013A&A...553L...1D}.
+
+Overall, the origin of the clumps remains unclear, and raises many further questions. A
+distinguishing feature of RZ~Psc's light curve is that most of the time the star is near
+the quiescent level; if the dimming events are related to variable structure at the inner
+rim of a gas-rich disk, then why are the events so rare? Is the geometry so finely tuned
+that only the most extreme fluctuations are visible? In the asteroid belt scenario the
+details are equally unclear; if the clumps are recently disrupted planetesimals, how do
+they appear above the bulk of the disk when collisions are most likely to occur at the
+mid plane? Are there two populations of objects, one that forms the main disk, and
+another that causes the dimming events? Could such a scenario be reconciled with the
+transient absorption features? Answers to these questions will require further study, and
+will almost certainly require new observations.
 
 \subsection{Disk evolutionary state}\label{ss:evol}
 
 Many young stars with gas-rich disks show broadly similar variability (UXors, AA Tau
 analogues, dippers). With sporadic and deep photometric minima, and transient absorption
 lines, RZ~Psc is most similar to UXors and has often been associated with this class,
-albeit as an unusual member (e.g. \cite{2010A&A...524A...8G}). Initial distinctions
-were made based on the late spectral type (K0V), the relatively short dimming events, and
-a lack of near IR excess and accretion signatures. The more recent findings that the
+albeit as an unusual member (e.g. \cite{2010A&A...524A...8G}). Initial distinctions were
+made based on the late spectral type (K0V), the relatively short dimming events, and a
+lack of near IR excess and accretion signatures. The more recent findings that the
 stellar age is probably several tens of Myr, and that the IR excess is suggestive of an
 Asteroid belt analogue, further distinguish RZ~Psc as a potentially remarkable object
 where the early gas-poor stages of main-sequence debris disk evolution can be
 studied. There remain similarities between RZ~Psc and UXors. Primarily, we concluded that
 the clumps that cause the dimming events are most likely seen when they are well above
 the densest regions of a disk, consistent with the turbulent inner rim scenario proposed
-by \cite{2003ApJ...594L..47D}.
+by Dullemond et al. \cite{2003ApJ...594L..47D}.
 
 % sedcomp.pro
 \begin{figure}
   \begin{center}
     \hspace{-0.5cm} \includegraphics[width=0.7\textwidth]{figs/spcomp.eps}
-    \caption{The SED of RZ~Psc in comparison with other young disk-hosting stars. The
-      triangles are AKARI and IRAS upper limits for RZ~Psc. Measurements we made at
-      different times, so the apparent discrepancy between the WISE detection at 22$\mu$m
-      and the AKARI upper limit at 18$\mu$m is an indicator of IR variability (see
-      section \ref{s:data}\ref{ss:ir}).}\label{fig:spcomp}
+    \caption{The SED of RZ~Psc in comparison with other young disk-hosting stars. All
+      SEDs are normalised to a common flux density at $H$ band. The triangles are AKARI
+      and IRAS upper limits for RZ~Psc. Measurements we made at different times, so the
+      apparent discrepancy between the WISE detection at 22$\mu$m and the AKARI upper
+      limit at 18$\mu$m is an indicator of IR variability (see section
+      \ref{s:data}\ref{ss:ir}).}\label{fig:spcomp}
   \end{center}
 \end{figure}
 
@@ -1190,7 +1209,7 @@ modelled as an optically thick transition disk extending from 1-25au
 \cite{2014MNRAS.438.3299K}. Thus, as was concluded above by considering self-shadowing,
 it could be that RZ~Psc hosts a disk that extends from 0.3 to a few tens of au.
 
-While the lack of a near-IR excess for RZ~Psc suggests that the disk is at least in
+While the lack of a large near-IR excess for RZ~Psc suggests that the disk is at least in
 the transition to a debris disk (i.e. has an inner hole), it does not preclude the
 possibility that gas resides in that hole and may still be accreting on to the star. No
 emission lines that would provide evidence of accretion have been seen
@@ -1242,8 +1261,8 @@ special time with a specific geometry, so may yield better insights than most sy
     \caption{Cartoon showing possible origins of dippers and UXors, and why Sun-like
       stars may only rarely show analogous behaviour. In each case the star, magnetic
       dipole, and rotation axis are shown at the left (the stellar magnetic field is not
-      necessarily tilted with respect to the disk). Possible disk structures viewed
-      edge-on to the right. (\emph{top}) low-mass stars (dippers) are occulted by
+      necessarily always tilted with respect to the disk). Possible disk structures
+      viewed edge-on to the right. (\emph{top}) low-mass stars (dippers) are occulted by
       co-rotating material that is accreting on to the star, and the dust sublimation
       radius is interior to corotation \cite{2016arXiv160503985B}. (\emph{middle})
       Sun-like stars are rarely seen as dippers or UXors because i) dust sublimates
@@ -1251,9 +1270,7 @@ special time with a specific geometry, so may yield better insights than most sy
       \cite{2016arXiv160503985B}), or ii) material lifted by turbulence is shadowed by
       the outer disk (spiral in the lower half). (\emph{bottom}) Herbig Ae/Be stars
       (UXors) are occulted by turbulence that appears above self-shadowed disks
-      \cite{2003ApJ...594L..47D}. In this type of (primordial) scenario RZ~Psc is
-      occulted by turbulence in an evolved disk with little flaring (i.e. dust has
-      settled towards the disk midplane).}\label{fig:cartoon}
+      \cite{2003ApJ...594L..47D}.}\label{fig:cartoon}
   \end{center}
 \end{figure}
 
@@ -1280,10 +1297,10 @@ must not be more flared than the height of the accretion columns (as seen from t
 star). This could be because disks around low mass stars are simply less flared in
 general (e.g. \cite{2010ApJ...720.1668S}), because disks in dipper systems tend to be
 more evolved than average \cite{2016ApJ...816...69A}, or because there is less relation
-between the outer disk geometry and the accretion columns than would be naively expected
-\cite{2016MNRAS.462L.101A}. Of course, if disks around Sun-like stars are sufficiently
-flared that the inner regions are not visible, then whether the accretion streams are
-transparent or not is moot.
+between the outer disk geometry, the inner disk, and accretion columns than would be
+naively expected \cite{2016MNRAS.462L.101A}. Of course, if disks around Sun-like stars
+are sufficiently flared that the inner regions are not visible, then whether the
+accretion streams are transparent or not is moot.
 
 From the perspective of UXors, a possible explanation for their tendency to be late B and
 A-type stars is that the specifics of self-shadowing are different for Sun-like stars
@@ -1303,13 +1320,13 @@ In this context the rarity of RZ~Psc-like objects can be explained in two ways. 
 simply sidesteps the above discussion by interpreting the disk as a gas-poor asteroid
 belt analogue. Examples of such bright disks at a few au are rare
 \cite{2013MNRAS.433.2334K}, and only a subset of these will be oriented such that dimming
-events are seen (recalling that the occulting bodies are at tens to hundreds of stellar
-radii). The second explanation relies on RZ~Psc's age and SED, which suggest that it
-hosts a gas-rich transition disk that is well settled (i.e. not significantly flared),
-and hence turbulence above the disk inner edge is visible. The non-detection of RZ~Psc in
-the far-IR (Figure \ref{fig:spcomp}) might also be the result of such settling, and
-suggests that the brightness at millimeter wavelengths might be brighter than expected
-given the mid/far-IR brightness
+events are seen above the disk mid plane (recalling that the occulting bodies are at tens
+to hundreds of stellar radii). The second explanation relies on RZ~Psc's age and SED,
+which suggest that it hosts a gas-rich transition disk that is well settled (i.e. not
+significantly flared), and hence turbulence above the disk inner edge is visible. The
+non-detection of RZ~Psc in the far-IR (Figure \ref{fig:spcomp}) might also be the result
+of such settling, and suggests that the brightness at millimeter wavelengths might be
+brighter than expected given the mid/far-IR brightness
 (e.g. \cite{2004A&A...421.1075D,2007prpl.conf..555D}). The rarity is again explained by
 an unlikely geometry, and perhaps that the period during which the inner disk can be seen
 above the outer disk as it settles is relatively short.
@@ -1324,9 +1341,9 @@ and where the outer disk is self-shadowed \cite{2003ApJ...594L..47D}. Various an
 characteristics distinguish RZ~Psc from other UXors; the possible age of a few tens of
 Myr, the K0V spectral type, the few-day long dimming events, and the location of the
 IR-excess emitting dust well beyond the sublimation radius. These characteristics have
-been used by de Wit et al. to suggest that RZ~Psc hosts a gas-poor asteroid belt analogue
-at 0.4-0.7au and that the dust clumps that occult the star are the dispersed fragments
-produced in destructive planetesimal collisions \cite{2013A&A...553L...1D}.
+been used by de Wit et al. \cite{2013A&A...553L...1D} to suggest that RZ~Psc hosts a
+gas-poor asteroid belt analogue at 0.4-0.7au and that the dust clumps that occult the
+star are the dispersed fragments produced in destructive planetesimal collisions.
 
 To take a critical look at this intriguing scenario, we have presented and analysed ten
 years of WASP and KELT-North photometric monitoring of RZ~Psc. We found circumstantial
@@ -1347,13 +1364,13 @@ disk-like structure, the belt is almost certainly optically thick with an openin
 of a few tens of degrees, with the system viewed at an inclination that allows clumps
 residing above this belt to pass in front of the star. While such a geometry is possible
 for both UXor-like and asteroid belt scenarios, the relatively cool temperature of the
-dust around RZ~Psc means that if it hosts a gas-rich disk it must be a transition object.
-
-However, comparison of RZ~Psc's spectrum with other objects suggest that it is more
-similar to objects considered to be debris disks, rather than transition disks. This
-conclusion in part rests on a low far-IR disk luminosity which could arise if the outer
-disk is shadowed (as suggested for UXors). The spectrum is poorly sampled and would
-benefit from millimeter photometry to test whether there is a settled outer disk.
+dust around RZ~Psc means that if it hosts a gas-rich disk it must be a transition
+object. Indeed, comparison of RZ~Psc's spectrum with other objects suggest that it is
+similar to objects whose status is ambiguous, and could be either debris or transition
+disks. The low far-IR disk luminosity could arise if the outer disk is shadowed (as
+suggested for UXors), or simply because there is no outer disk. The spectrum is poorly
+sampled and would benefit from millimeter photometry, specifically to test whether there
+is a settled outer disk.
 
 Overall, we conclude that the status of RZ~Psc's disk is uncertain, and therefore that so
 is the origin of the clumps. The lack of near-IR excess shows that the disk is beyond the
@@ -1388,9 +1405,9 @@ manuscript.
 
 \textbf{Acknowledgments:} We thank Joachim G\"urtler for sharing photometry from the
 Sonneberg and Harvard Plates in a palatable form, AAVSO observers for monitoring RZ~Psc,
-and Simon Hodgkin, Jim Pringle, and Mark Wyatt for useful discussions. This paper makes
-use of data from the DR1 of the WASP data \cite{2010A&A...520L..10B} as provided by the
-WASP consortium, and the computing and storage facilities at the CERIT Scientific Cloud,
+and Simon Hodgkin and Jim Pringle for useful discussions. This paper makes use of data
+from the DR1 of the WASP data \cite{2010A&A...520L..10B} as provided by the WASP
+consortium, and the computing and storage facilities at the CERIT Scientific Cloud,
 reg. no. CZ.1.05/3.2.00/08.0144 which is operated by Masaryk University, Czech Republic.
 
 \textbf{Funding:} GMK is supported by the Royal Society as a Royal Society University
