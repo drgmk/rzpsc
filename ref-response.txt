@@ -1,4 +1,4 @@
-X December 2016
+9 December 2016
 
 Dear Editor,
 
@@ -7,17 +7,13 @@ comments of the referees and have addressed their suggestions in the revised
 version. Individual responses to the comments are noted below.
 
 One referee noted a limitation of the RSOS latex style file is that sub-sections are not
-referenced properly (i.e. 5c is only referenced as c).
+referenced properly (i.e. 5c is only referenced as c). We have modified these in the
+tex, but the linking in the PDF is not correct.
 
 regards
 Grant Kennedy
 
 --
-
-Additional changes:
-
-S4a: the shear rate should have been R dOmega/DR, not dVphi/dR. The difference is a
-factor 3 so makes no difference to our conclusions.
 
 Comments to Author:
 
@@ -172,7 +168,7 @@ more cautiously. We know that accretion and photoevaporation
 play a role (among other processes), but we do not know their
 relative important, so, 'most' is to me a reach.
 
-Fair enough.
+Fair enough, modified in a more cautious way.
 
 2. Introduction, 4th paragraph: Since the entire introduction
 is discussing young stars with some type of disk, I find it
@@ -192,7 +188,8 @@ confusion in the overall argument of the paper.
 
 Indeed, this probably reflects the way in which this project was approached. We have
 tried to provide a more balanced picture, and introduced the disk status as a major
-question from the outset.
+question from the outset. Providing a more balanced view has resulted in minor changes
+throughout.
 
 4. Sect. 3, 1st paragraph: I think when using the WASP archive,
 it is worth citing Butters et al. 2010. 
@@ -316,7 +313,8 @@ on variability. There may also be NEOWISE data on this star. I mention
 this because variability in the mid-infrared could be an additional
 clue on the nature of the dimmings.
 
-Indeed, see response to similar comment from the first referee above.
+Indeed, see response to similar comment from the first referee above. The result is a new
+section on mid-IR data, including some new VISIR observations.
 
 18. Again Figure 8: Looking at this figure, the distinction between
 debris and transition disks seems dubious to me. On what basis is
@@ -358,3 +356,10 @@ inclined with respect to the rotational axis.)
 We have updated the figure slightly to include a clearer inner edge for the low mass and
 Sun-like stars, as well as added some text emphasising that Fig 9 is indeed simplified,
 and that the stellar magnetic field need not be tilted.
+
+
+Additional changes:
+
+S4a: the shear rate should have been R dOmega/DR, not dVphi/dR. The difference is a
+factor 3 so makes no difference to our conclusions.
+
