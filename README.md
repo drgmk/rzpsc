@@ -1,10 +1,10 @@
 # RZ Psc
 
-RZ~Psc is a young Sun-like star, long associated with the UXor class of variable stars,
+RZ Psc is a young Sun-like star, long associated with the UXor class of variable stars,
 which is partially or wholly dimmed by dust clumps several times each year. The system
 has a bright and variable infrared excess, which has been interpreted as evidence that
 the dimming events are the passage of asteroidal fragments in front of the host
-star. Here, we present a decade of optical photometry of RZ~Psc and take a critical look
+star. Here, we present a decade of optical photometry of RZ Psc and take a critical look
 at the asteroid belt interpretation. We show that the distribution of light curve
 gradients is non-uniform for deep events, which we interpret as possible evidence for an
 asteroidal fragment-like clump structure. However, the clumps are very likely seen above
